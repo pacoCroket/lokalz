@@ -136,23 +136,70 @@
                             >
                                 At least 8 characters and 1 digit
                             </small>
-
-                            <!-- Phone number -->
-                            <input
-                                type="text"
-                                id="defaultRegisterPhonePassword"
-                                class="form-control"
-                                placeholder="Phone number"
-                                aria-describedby="defaultRegisterFormPhoneHelpBlock"
-                            />
-                            <small
-                                id="defaultRegisterFormPhoneHelpBlock"
-                                class="form-text text-muted mb-4"
-                            >
-                                Optional - for two step authentication
-                            </small>
-
-                            <!-- Newsletter -->
+                            <div id="hide_open" class="fold">
+                                <!-- Shop name -->
+                                <input
+                                    type="text"
+                                    id="defaultRegisterFormFirstName"
+                                    class="form-control shop_name"
+                                    placeholder="Geschäftsname"
+                                />
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <!-- Straße -->
+                                        <input
+                                            type="text"
+                                            id="defaultRegisterFormFirstName"
+                                            class="form-control"
+                                            placeholder="Straße"
+                                        />
+                                    </div>
+                                    <div class="col">
+                                        <!-- Hausnummer -->
+                                        <input
+                                            type="text"
+                                            id="defaultRegisterFormLastName"
+                                            class="form-control"
+                                            placeholder="Hausnummer"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <!-- PLZ -->
+                                        <input
+                                            type="text"
+                                            id="defaultRegisterFormFirstName"
+                                            class="form-control"
+                                            placeholder="PLZ"
+                                        />
+                                    </div>
+                                    <div class="col">
+                                        <!--Stadt -->
+                                        <input
+                                            type="text"
+                                            id="defaultRegisterFormLastName"
+                                            class="form-control"
+                                            placeholder="Stadt"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- Phone number -->
+                                <input
+                                    type="text"
+                                    id="defaultRegisterPhonePassword"
+                                    class="form-control"
+                                    placeholder="Phone number"
+                                    aria-describedby="defaultRegisterFormPhoneHelpBlock"
+                                />
+                                <small
+                                    id="defaultRegisterFormPhoneHelpBlock"
+                                    class="form-text text-muted mb-4"
+                                >
+                                </small>
+                            </div>
+                            <!--                        
+                             <-Newsletter->
                             <div class="custom-control custom-checkbox">
                                 <input
                                     type="checkbox"
@@ -165,6 +212,7 @@
                                     >Subscribe to our newsletter</label
                                 >
                             </div>
+                            -->
 
                             <!-- Sign up button -->
                             <button
@@ -176,8 +224,10 @@
 
                             <!-- Social register -->
                             <p>or sign up as a shopowner:</p>
-
-                            <a href="#" class="mx-2" role="button"
+                            <a href="#" class="brk-btn" id="event_toggle">
+                                Geschäftsanmeldung
+                            </a>
+                            <!-- <a href="#" class="mx-2" role="button"
                                 ><i
                                     class="fab fa-facebook-f light-blue-text"
                                 ></i
@@ -192,7 +242,7 @@
                             ></a>
                             <a href="#" class="mx-2" role="button"
                                 ><i class="fab fa-github light-blue-text"></i
-                            ></a>
+                            ></a> -->
 
                             <hr />
 
@@ -210,8 +260,8 @@
         </header>
         <!-- Compiled and minified JavaScript -->
         <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"
         ></script>
         <script
@@ -224,6 +274,8 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"
         ></script>
+
         <script src="index.js"></script>
+        <script></script>
     </body>
 </html>
