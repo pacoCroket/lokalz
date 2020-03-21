@@ -16,5 +16,8 @@
     "bugs": {
         "url": "https://github.com/pacoCroket/lokalz/issues"
     },
-    "homepage": "https://github.com/pacoCroket/lokalz#readme"
+    "homepage": "https://github.com/pacoCroket/lokalz#readme",
+    "dependencies": {
+        "firebase": "^7.12.0"
+    }
 }
