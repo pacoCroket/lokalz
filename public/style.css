@@ -1,0 +1,44 @@
+:root {
+    --mainColor: #f9ce21;
+}
+html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth !important;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.navbar {
+    font-size: 1.5rem;
+    margin-left: 2%;
+}
+.landing {
+    height: 100vh;
+    background-color: #f8f9fa !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 10%;
+}
+.title {
+    font-size: 8rem !important;
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+.sm_title {
+    text-align: right;
+    border-bottom: solid;
+}
+.front_text {
+    margin: 5% 0;
+    font-size: 1.3rem;
+}
+/* SIGNUP PAGE */
+
+.form-group {
+}
