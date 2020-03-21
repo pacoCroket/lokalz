@@ -1,11 +1,12 @@
 :root {
-    --mainColor: #f9ce21;
+  --mainColor: #f9ce21;
 }
 html {
-    font-family: "Montserrat", sans-serif;
-    scroll-behavior: smooth !important;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth !important;
 }
 body {
+
     font-family: "Montserrat", sans-serif;
     font-family: "Oswald", sans-serif;
     background-color: #f8f9fa !important;
@@ -16,20 +17,22 @@ body {
     letter-spacing: -1px;
     border-bottom: solid;
 }
+
 .landing {
-    height: 100vh;
-    background-color: #f8f9fa !important;
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
+  height: 100vh;
+  background-color: #f8f9fa !important;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .nav-link {
     margin: 0 1rem !important;
 }
 .row {
-    width: 100%;
-    margin-bottom: 10%;
+  width: 100%;
+  margin-bottom: 10%;
 }
+
 .front_header {
     font-size: 8rem !important;
     text-align: left;
@@ -38,8 +41,8 @@ body {
 }
 
 .front_text {
-    margin: 5% 0;
-    font-size: 1.3rem;
+  margin: 5% 0;
+  font-size: 1.3rem;
 }
 /* SIGNUP PAGE */
 .shop_signup {
