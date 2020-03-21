@@ -140,6 +140,7 @@ body {
     margin-top: 20%;
     font-family: "Oswald", sans-serif;
     padding: 0.5em;
+    background-color: #f9ce21;
 }
 
 /* SECTION2 */
@@ -149,9 +150,10 @@ body {
     border-bottom: solid;
     border-left: solid;
     border-top: solid;
-    margin-top: 20%;
+    /* margin-top: 400px; */
     font-family: "Oswald", sans-serif;
     padding: 0.5em;
+    background-color: #f9ce21;
 }
 .section_2 {
     height: 100vh;
@@ -159,4 +161,11 @@ body {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
+}
+.pic {
+    height: 30vh;
+    width: 100%;
+    border: solid;
+    border-radius: 50%;
+    margin-bottom: 40%;
 }
