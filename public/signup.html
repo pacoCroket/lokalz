@@ -87,51 +87,170 @@
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-4 center">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1"
-                                    >Email address</label
-                                >
+                        <form
+                            class="text-center border border-light p-5 shop_signup"
+                            action="#!"
+                        >
+                            <p class="h4 mb-4">Sign up</p>
+
+                            <div class="form-row mb-4">
+                                <div class="col">
+                                    <!-- First name -->
+                                    <input
+                                        type="text"
+                                        id="defaultRegisterFormFirstName"
+                                        class="form-control"
+                                        placeholder="First name"
+                                    />
+                                </div>
+                                <div class="col">
+                                    <!-- Last name -->
+                                    <input
+                                        type="text"
+                                        id="defaultRegisterFormLastName"
+                                        class="form-control"
+                                        placeholder="Last name"
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- E-mail -->
+                            <input
+                                type="email"
+                                id="defaultRegisterFormEmail"
+                                class="form-control mb-4"
+                                placeholder="E-mail"
+                            />
+
+                            <!-- Password -->
+                            <input
+                                type="password"
+                                id="defaultRegisterFormPassword"
+                                class="form-control"
+                                placeholder="Password"
+                                aria-describedby="defaultRegisterFormPasswordHelpBlock"
+                            />
+                            <small
+                                id="defaultRegisterFormPasswordHelpBlock"
+                                class="form-text text-muted mb-4"
+                            >
+                                At least 8 characters and 1 digit
+                            </small>
+                            <div id="hide_open" class="fold">
+                                <!-- Shop name -->
                                 <input
-                                    type="email"
+                                    type="text"
+                                    id="defaultRegisterFormFirstName"
+                                    class="form-control shop_name"
+                                    placeholder="Geschäftsname"
+                                />
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <!-- Straße -->
+                                        <input
+                                            type="text"
+                                            id="defaultRegisterFormFirstName"
+                                            class="form-control"
+                                            placeholder="Straße"
+                                        />
+                                    </div>
+                                    <div class="col">
+                                        <!-- Hausnummer -->
+                                        <input
+                                            type="text"
+                                            id="defaultRegisterFormLastName"
+                                            class="form-control"
+                                            placeholder="Hausnummer"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <!-- PLZ -->
+                                        <input
+                                            type="text"
+                                            id="defaultRegisterFormFirstName"
+                                            class="form-control"
+                                            placeholder="PLZ"
+                                        />
+                                    </div>
+                                    <div class="col">
+                                        <!--Stadt -->
+                                        <input
+                                            type="text"
+                                            id="defaultRegisterFormLastName"
+                                            class="form-control"
+                                            placeholder="Stadt"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- Phone number -->
+                                <input
+                                    type="text"
+                                    id="defaultRegisterPhonePassword"
                                     class="form-control"
-                                    id="exampleInputEmail1"
-                                    aria-describedby="emailHelp"
-                                    placeholder="Enter email"
+                                    placeholder="Phone number"
+                                    aria-describedby="defaultRegisterFormPhoneHelpBlock"
                                 />
                                 <small
-                                    id="emailHelp"
-                                    class="form-text text-muted"
-                                    >We'll never share your email with anyone
-                                    else.</small
+                                    id="defaultRegisterFormPhoneHelpBlock"
+                                    class="form-text text-muted mb-4"
                                 >
+                                </small>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1"
-                                    >Password</label
-                                >
-                                <input
-                                    type="password"
-                                    class="form-control"
-                                    id="exampleInputPassword1"
-                                    placeholder="Password"
-                                />
-                            </div>
-                            <div class="form-group form-check">
+                            <!--                        
+                             <-Newsletter->
+                            <div class="custom-control custom-checkbox">
                                 <input
                                     type="checkbox"
-                                    class="form-check-input"
-                                    id="exampleCheck1"
+                                    class="custom-control-input"
+                                    id="defaultRegisterFormNewsletter"
                                 />
                                 <label
-                                    class="form-check-label"
-                                    for="exampleCheck1"
-                                    >Check me out</label
+                                    class="custom-control-label"
+                                    for="defaultRegisterFormNewsletter"
+                                    >Subscribe to our newsletter</label
                                 >
                             </div>
-                            <button type="submit" class="btn btn-primary">
-                                Submit
+                            -->
+
+                            <!-- Sign up button -->
+                            <button
+                                class="btn btn-info my-4 btn-block"
+                                type="submit"
+                            >
+                                Sign in
                             </button>
+
+                            <!-- Social register -->
+                            <p>or sign up as a shopowner:</p>
+                            <a href="#" class="brk-btn" id="event_toggle">
+                                Geschäftsanmeldung
+                            </a>
+                            <!-- <a href="#" class="mx-2" role="button"
+                                ><i
+                                    class="fab fa-facebook-f light-blue-text"
+                                ></i
+                            ></a>
+                            <a href="#" class="mx-2" role="button"
+                                ><i class="fab fa-twitter light-blue-text"></i
+                            ></a>
+                            <a href="#" class="mx-2" role="button"
+                                ><i
+                                    class="fab fa-linkedin-in light-blue-text"
+                                ></i
+                            ></a>
+                            <a href="#" class="mx-2" role="button"
+                                ><i class="fab fa-github light-blue-text"></i
+                            ></a> -->
+
+                            <hr />
+
+                            <!-- Terms of service -->
+                            <p>
+                                By clicking <em>Sign up</em> you agree to our
+                                <a href="" target="_blank">terms of service</a>
+                            </p>
                         </form>
                     </div>
                     <div class="col-md-1"></div>
@@ -141,8 +260,8 @@
         </header>
         <!-- Compiled and minified JavaScript -->
         <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"
         ></script>
         <script
@@ -155,6 +274,8 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"
         ></script>
+
         <script src="index.js"></script>
+        <script></script>
     </body>
 </html>

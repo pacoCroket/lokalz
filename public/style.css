@@ -33,12 +33,72 @@ body {
 .sm_title {
     text-align: right;
     border-bottom: solid;
+    margin-top: 40%;
 }
 .front_text {
     margin: 5% 0;
     font-size: 1.3rem;
 }
 /* SIGNUP PAGE */
+.shop_signup {
+    margin-top: 40%;
+}
+.nachbar_form {
+    margin-top: 20%;
+}
+.shop_name {
+    margin-bottom: 1.5rem !important;
+}
 
-.form-group {
+.brk-btn {
+    position: relative;
+    background: none;
+    color: aqua;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0.2em solid aqua;
+    padding: 0.5em 1em;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 10%;
+        background: #222;
+        height: 0.3em;
+        right: 20%;
+        top: -0.21em;
+        transform: skewX(-45deg);
+        -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 10%;
+        background: #222;
+        height: 0.3em;
+        left: 20%;
+        bottom: -0.25em;
+        transform: skewX(45deg);
+        -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+        transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    &:hover {
+        &::before {
+            right: 80%;
+        }
+        &::after {
+            left: 80%;
+        }
+    }
+}
+.fold {
+    display: none;
+    height: 0;
+    width: 100%;
+}
+
+.fold.active {
+    display: inline-block;
 }
