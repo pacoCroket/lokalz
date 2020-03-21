@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", event => {
+  $("#body").load("landing.html");
   // const app = firebase.app();
   const db = firebase.firestore();
 
@@ -29,3 +30,11 @@ document.addEventListener("DOMContentLoaded", event => {
       });
   }
 });
+
+function loadSignUp() {
+  $("#body").load("signup.html");
+}
+
+function loadHome() {
+  $("#body").load("landing.html");
+}
