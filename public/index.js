@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", event => {
 
+  $("#body").load("landing.html");
+
+
     $("#event_toggle").click(function() {
         var active = $(".fold.active");
         console.log("blablabla");
@@ -47,3 +50,11 @@ document.addEventListener("DOMContentLoaded", event => {
       });
   }
 });
+
+function loadSignUp() {
+  $("#body").load("signup.html");
+}
+
+function loadHome() {
+  $("#body").load("landing.html");
+}
