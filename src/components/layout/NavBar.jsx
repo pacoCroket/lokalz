@@ -13,9 +13,9 @@ class MyNavBar extends Component {
 
     return (
       <Navbar bg="light" expand="lg" fixed="top">
-        <Navbar.Brand href="" target="_blank" rel="noopener noreferrer">
+        {/* <Navbar.Brand href="" target="_blank" rel="noopener noreferrer">
           LokalZ
-        </Navbar.Brand>
+        </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -34,7 +34,7 @@ class MyNavBar extends Component {
           </Nav>
 
           <Navbar.Text className="position-absolute text-capitalize" style={{ left: "50%" }}>
-            LokalZ
+            LokalZ.
           </Navbar.Text>
           {auth.isLoaded && links}
         </Navbar.Collapse>

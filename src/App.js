@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./style/App.css";
+import "./style/style.css";
 import NavBar from "./components/layout/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";

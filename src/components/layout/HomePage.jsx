@@ -13,7 +13,7 @@ class HomePage extends Component {
           <div className="row">
             <div className="col-md-3">
               <h3 className="sm_title">
-                <b>Lokal</b>zone
+                <b>Lokal</b>Zone
               </h3>
             </div>
             <div className="col-md-1"></div>
