@@ -15,24 +15,24 @@ class MyNavBar extends Component {
     return (
       <header>
         <Navbar collapseOnSelect expand="lg" fixed="top">
-          <Navbar.Brand className="nav-brand text-capitalize text-center" href="#home">
+          <Navbar.Brand className="nav-brand text-capitalize text-center" href="/#home">
             LokalZ
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <NavLink className="nav-link" to="/#home" className="nav-link">
+              <Nav.Link className="nav-link" href="/#home" className="nav-link">
                 Home
-              </NavLink>
-              <NavLink className="nav-link" to="/#about" className="nav-link">
+              </Nav.Link>
+              <Nav.Link className="nav-link" href="/#about" className="nav-link">
                 About
-              </NavLink>
-              <NavLink className="nav-link" to="/#browse" className="nav-link">
+              </Nav.Link>
+              <Nav.Link className="nav-link" href="/#browse" className="nav-link">
                 Browse
-              </NavLink>
-              <NavLink className="nav-link" to="/#contact" className="nav-link">
+              </Nav.Link>
+              <Nav.Link className="nav-link" href="/#contact" className="nav-link">
                 Contact
-              </NavLink>
+              </Nav.Link>
             </Nav>
 
             {/* <Navbar.Text className="nav-brand position-absolute text-capitalize" style={{ left: "50%" }}>
