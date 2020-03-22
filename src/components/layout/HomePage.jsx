@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import Image from "react-bootstrap/Image";
+import { Row } from "react-bootstrap";
 
 class HomePage extends Component {
     render() {
@@ -57,31 +58,31 @@ class HomePage extends Component {
 
                     <div className="col-md-6 circle_pos">
                         {/* IMAGE1 */}
-                        <Image
-                            className="pic"
-                            style={{ backgroundColor: "darkred" }}
-                            src="/assets/images/commerce.svg"
-                            roundedCircle
-                        />
-                        <span className="text_pos text-center">
-                            <h4 className="pic_title">
-                                Lokal
-                                <span
-                                    style={{
-                                        color: "var(--accent-secondary-color)"
-                                    }}
-                                >
-                                    !
-                                </span>
-                            </h4>
-                            <p className="pic_text">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam
-                            </p>
-                        </span>
-
+                        <div className="d-flex justify-content-end">
+                            <Image
+                                className="pic"
+                                style={{ backgroundColor: "darkred" }}
+                                src="/assets/images/commerce.svg"
+                                roundedCircle
+                            />
+                            <span className="text_pos text-center">
+                                <h4 className="pic_title">
+                                    Lokal
+                                    <span
+                                        style={{
+                                            color:
+                                                "var(--accent-secondary-color)"
+                                        }}
+                                    ></span>
+                                </h4>
+                                <p className="pic_text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam
+                                </p>
+                            </span>
+                        </div>
                         {/* IMAGE2 */}
                         <Image
                             className="pic"
