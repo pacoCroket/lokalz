@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./style/App.css";
-import MyNavBar from "./components/layout/MyNavBar";
+import NavBar from "./components/layout/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "./components/layout/HomePage";
@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App" id="app">
-          <MyNavBar id="NavBar" />
+          <NavBar id="NavBar" />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/signup" component={SingUp} />

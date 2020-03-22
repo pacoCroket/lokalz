@@ -8,7 +8,7 @@ class HomePage extends Component {
     const { notifications } = this.props;
 
     return (
-      <body>
+      <>
         <div className="landing">
           <div className="row">
             <div className="col-md-3">
@@ -54,7 +54,7 @@ class HomePage extends Component {
             </div>
           </div>
         </div>
-      </body>
+      </>
     );
   }
 }

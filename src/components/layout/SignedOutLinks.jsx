@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 
 export default class SignedOutLinks extends Component {
   render() {

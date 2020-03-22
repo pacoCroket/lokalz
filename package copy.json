@@ -1,7 +1,27 @@
 {
   "name": "lokalz",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Support local businesses with easy and safe neighbour interaction",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacoCroket/lokalz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacoCroket/lokalz/issues"
+  },
+  "homepage": "https://github.com/pacoCroket/lokalz#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -22,15 +42,6 @@
     "redux-firestore": "^0.13.0",
     "redux-thunk": "^2.3.0",
     "underscore": "^1.9.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [

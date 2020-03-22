@@ -3,6 +3,8 @@ import SignedInLinks from "./SignedInLinks";
 import SignedOutLinks from "./SignedOutLinks";
 import { connect } from "react-redux";
 import Navbar from "react-bootstrap/Navbar";
+import { NavLink } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 
 class MyNavBar extends Component {
   render() {
@@ -11,11 +13,7 @@ class MyNavBar extends Component {
 
     return (
       <Navbar bg="light" expand="lg" fixed="top">
-        <Navbar.Brand
-          href="https://github.com/pacoCroket/coord-noise-simulation"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Navbar.Brand href="" target="_blank" rel="noopener noreferrer">
           LokalZ
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

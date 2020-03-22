@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Nav from "react-bootstrap/Nav";
-import { NavLink } from "react-router-dom";
 import { firestoreConnect } from "react-redux-firebase";
 import { connect } from "react-redux";
 import { compose } from "redux";
 import { signOut } from "../../store/actions/authActions";
 import { getUserProjects } from "../../store/actions/projectActions";
-import Navbar from "react-bootstrap/Navbar";
 import { isEmpty } from "underscore";
 
 class SignedInLinks extends Component {
@@ -20,7 +18,7 @@ class SignedInLinks extends Component {
   };
 
   render() {
-    const { profile, projects } = this.props;
+    const { profile } = this.props;
 
     return (
       <Nav className="ml-auto">
