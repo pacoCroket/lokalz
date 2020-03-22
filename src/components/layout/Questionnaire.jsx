@@ -42,7 +42,7 @@ class Questionnaire extends Component {
 
     return (
       <div className="d-flex justify-content-center align-items-center">
-        <div className="subscribe">
+        <div className="subscribe" id="#subscribe">
           <Form onSubmit={this.handleSubmit}>
             <h5>Fragenbogen</h5>
             <Form.Row>

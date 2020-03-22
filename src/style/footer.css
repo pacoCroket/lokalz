@@ -1,4 +1,7 @@
 .footer-area {
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
   padding: 2rem 0;
   background-color: var(--accent-light-color);
 }

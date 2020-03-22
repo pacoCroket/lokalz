@@ -1,5 +1,5 @@
 .navbar {
-  font: 600 2rem/2.5rem "Oswald", sans-serif;
+  font: 600 2rem/2.5rem var(--primary-font);
   padding: 0.5rem 8% !important;
   border-bottom: solid;
   background-color: var(--accent-light-color);
@@ -9,11 +9,15 @@
   margin: 0 1rem;
 }
 
-.nav-logo {
+.nav-brand {
+  font: 600 3rem/3rem var(--primary-font) !important;
+  position: absolute;
+  left: 50%;
 }
 
 @media only screen and (max-width: 1400px) {
-  .nav-logo {
-    display: none !important;
+  .nav-brand {
+    position: relative;
+    left: 0;
   }
 }
