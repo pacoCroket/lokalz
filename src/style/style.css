@@ -4,6 +4,8 @@
 html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth !important;
+  min-height: 100vh;
+  background-color: #f8f9fa;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -14,8 +16,6 @@ body {
 }
 
 .landing {
-  height: 100vh;
-  background-color: #f8f9fa !important;
   display: flex;
   justify-content: center !important;
   align-items: center !important;
@@ -32,10 +32,9 @@ body {
   font-weight: 600;
 }
 .sm_title {
-
-    text-align: right;
-    border-bottom: solid;
-    margin-top: 40%;
+  text-align: right;
+  border-bottom: solid;
+  margin-top: 40%;
 }
 .front_text {
   margin: 5% 0;
@@ -43,64 +42,57 @@ body {
 }
 /* SIGNUP PAGE */
 .shop_signup {
-    margin-top: 40%;
+  margin-top: 40%;
 }
 .nachbar_form {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 .shop_name {
-    margin-bottom: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .brk-btn {
-    position: relative;
-    background: none;
-    color: aqua;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 0.2em solid aqua;
-    padding: 0.5em 1em;
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 10%;
-        background: #222;
-        height: 0.3em;
-        right: 20%;
-        top: -0.21em;
-        transform: skewX(-45deg);
-        -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
-        transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
-    }
-    &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 10%;
-        background: #222;
-        height: 0.3em;
-        left: 20%;
-        bottom: -0.25em;
-        transform: skewX(45deg);
-        -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
-        transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
-    }
-    &:hover {
-        &::before {
-            right: 80%;
-        }
-        &::after {
-            left: 80%;
-        }
-    }
+  position: relative;
+  background: none;
+  color: aqua;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid aqua;
+  padding: 0.5em 1em;
 }
+.brk-btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  right: 20%;
+  top: -0.21em;
+  transform: skewX(-45deg);
+  -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  left: 20%;
+  bottom: -0.25em;
+  transform: skewX(45deg);
+  -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
 .fold {
-    display: none;
-    height: 0;
-    width: 100%;
+  display: none;
+  height: 0;
+  width: 100%;
 }
 
 .fold.active {
-    display: inline-block;
+  display: inline-block;
 }
