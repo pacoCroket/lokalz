@@ -12,6 +12,12 @@ import "./../../style/auth.css";
 class Questionnaire extends Component {
   state = { showConfimation: false, firstName: "", lastName: "", email: "", city: "", region: "", plz: "" };
 
+  selectOptions1 = {
+    kann: "ja, kann und will ich",
+    kannNicht: "ja, will ich, kann aber nicht",
+    nein: "nein, will ich nicht "
+  };
+
   handleClose = () => this.setState({ showConfimation: false });
   handleShow = () => this.setState({ showConfimation: true });
 
@@ -34,7 +40,7 @@ class Questionnaire extends Component {
         </Modal.Header>
         <Modal.Body>-- some text saying thanks and next steps --</Modal.Body>
         <Modal.Footer>
-          <Button clasName="btn-primary" onClick={this.handleClose}>
+          <Button className="btn-primary" onClick={this.handleClose}>
             Close
           </Button>
         </Modal.Footer>
@@ -43,13 +49,54 @@ class Questionnaire extends Component {
 
     return (
       <div className="d-flex flex-column justify-content-center align-items-center">
-        <div className="subscribe" id="#subscribe">
-          <Card>
-            <Card.Body>This is some text within a card body.</Card.Body>
-          </Card>
-
+        <Card className="my-4 w-50">
+          <Card.Title className="mx-auto p-2 my-0">Helft uns euch zu helfen</Card.Title>
+          <Card.Body>
+            <p>
+              Kurze Info was wir machen. Fragebogen als Info über Optionen und für Anregungen/Hilfe/Feedback
+              nicht bindend!!! Soll uns nur helfen, Lösungen zu finden die euch helfen! Kurze Info was wir
+              machen.
+            </p>
+            <p>
+              Fragebogen als Info über Optionen und für Anregungen/Hilfe/Feedback nicht bindend!!! Soll uns
+              nur helfen, Lösungen zu finden die euch helfen! Kurze Info was wir machen.
+            </p>
+            <p>
+              Fragebogen als Info über Optionen und für Anregungen/Hilfe/Feedback nicht bindend!!! Soll uns
+              nur helfen, Lösungen zu finden die euch helfen!
+            </p>
+          </Card.Body>
+        </Card>
+        <div className="subscribe text-justify" id="#subscribe">
           <Form onSubmit={this.handleSubmit}>
-            <h5>Fragenbogen</h5>
+            <h1>Fragenbogen</h1>
+            <hr />
+            <h2>Informationen und Online Präsenz</h2>
+            <p>
+              Euch soll damit die Möglichkeit gegeben werden, euer Geschäft vorzustellen und Informationen
+              über die Produkte die Ihr anbietet für die Kunden bereitzustellen. Bitte gebt an, welche
+              Optionen Ihr dafür gerne nutzen würdet.
+            </p>
+            {/* Part 1 */}
+            <div className="py-3">
+              <h4>Allgemeine Informationen über mein Geschäft</h4>
+              <p>
+                Mit dieser Option könnt Ihr dem Kunden allgemeine Informationen über euer Geschäft
+                präsentieren. Dazu gehören Name, Art des Geschäfts, Adresse, Kontakt, und eine kurze
+                Vorstellung eures Geschäfts.
+              </p>
+              <Form.Group controlId="exampleForm.ControlSelect1">
+                <Form.Label>Würdet ihr dies gerne nutzen?</Form.Label>
+                <Form.Control as="select" required name="shopName" onChange={this.handleChange}>
+                  {Object.values(this.selectOptions1).map(opt => (
+                    <option>{opt}</option>
+                  ))}
+                </Form.Control>
+              </Form.Group>
+
+              <hr />
+            </div>
+            <h4>Contact details</h4>
             <Form.Row>
               <Form.Group as={Col} md="6" controlId="formBasicFirstName">
                 <Form.Label>First Name</Form.Label>
@@ -73,7 +120,16 @@ class Questionnaire extends Component {
                 />
               </Form.Group>
             </Form.Row>
-
+            <Form.Group controlId="formBasicShopName">
+              <Form.Label>Name deines Geschäfts</Form.Label>
+              <Form.Control
+                type="text"
+                // placeholder="Name deines Betriebs"
+                required
+                name="shopName"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
