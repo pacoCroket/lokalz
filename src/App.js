@@ -15,12 +15,14 @@ class App extends Component {
       <BrowserRouter>
         <div className="App" id="app">
           <NavBar id="NavBar" />
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/signup" component={SingUp} />
-            <Route path="/signin" component={SingIn} />
-            <Route path="/questionnaire" component={Questionnaire} />
-          </Switch>
+          <div className="content">
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route path="/signup" component={SingUp} />
+              <Route path="/signin" component={SingIn} />
+              <Route path="/questionnaire" component={Questionnaire} />
+            </Switch>
+          </div>
           <Footer></Footer>
         </div>
       </BrowserRouter>
