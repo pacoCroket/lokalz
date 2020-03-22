@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { connect } from "react-redux";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
 import { saveQuestionnaire } from "../../store/actions/authActions";
+import { ParallaxProvider } from "react-scroll-parallax";
 import "./../../style/auth.css";
 import "./../../style/auth.css";
 
@@ -15,6 +16,12 @@ class Questionnaire extends Component {
   selectOptions1 = {
     kann: "ja, kann und will ich",
     kannNicht: "ja, will ich, kann aber nicht",
+    nein: "nein, will ich nicht "
+  };
+
+  selectOptions2 = {
+    tel: "ja, per Telefon",
+    chatMail: "ja, per Chat/Mail",
     nein: "nein, will ich nicht "
   };
 
@@ -49,6 +56,7 @@ class Questionnaire extends Component {
 
     return (
       <div className="d-flex flex-column justify-content-center align-items-center">
+        {/* INTRO TO FRAGENBOGEN */}
         <Card className="my-4 w-50">
           <Card.Title className="mx-auto p-2 my-0">Helft uns euch zu helfen</Card.Title>
           <Card.Body>
@@ -67,6 +75,7 @@ class Questionnaire extends Component {
             </p>
           </Card.Body>
         </Card>
+        {/* START FRAGENBOGEN */}
         <div className="subscribe text-justify" id="#subscribe">
           <Form onSubmit={this.handleSubmit}>
             <h1>Fragenbogen</h1>
@@ -79,23 +88,66 @@ class Questionnaire extends Component {
             </p>
             {/* Part 1 */}
             <div className="py-3">
-              <h4>Allgemeine Informationen über mein Geschäft</h4>
-              <p>
-                Mit dieser Option könnt Ihr dem Kunden allgemeine Informationen über euer Geschäft
-                präsentieren. Dazu gehören Name, Art des Geschäfts, Adresse, Kontakt, und eine kurze
-                Vorstellung eures Geschäfts.
-              </p>
-              <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Label>Würdet ihr dies gerne nutzen?</Form.Label>
-                <Form.Control as="select" required name="shopName" onChange={this.handleChange}>
-                  {Object.values(this.selectOptions1).map(opt => (
-                    <option>{opt}</option>
-                  ))}
-                </Form.Control>
-              </Form.Group>
+              <Question
+                type={1}
+                title={"Allgemeine Informationen über mein Geschäft"}
+                desc={
+                  "Mit dieser Option könnt Ihr dem Kunden allgemeine Informationen über euer Geschäft präsentieren. Dazu gehören Name, Art des Geschäfts, Adresse, Kontakt, und eine kurze Vorstellung eures Geschäfts."
+                }
+                question={"Würdet ihr dies gerne nutzen?"}
+                options={this.selectOptions1}
+                handleChange={this.handleChange}
+              ></Question>
+              <Question
+                type={1}
+                title={"Allgemeiner Überblick über Produkte"}
+                desc={
+                  "Mit dieser Option könnt ihr eine allgemeine Übersicht über die verschiedenen Produkte, die Ihr anbietet präsentieren. Dies umfasst nur eine übersichtliche Auflistung der verschiedenen Arten von Produkten in Form von Schlagwörtern und Kategorien. Damit kann der Kunde sich informieren, was für Produkte ihr allgemein anbietet."
+                }
+                question={"Würdet ihr dies gerne nutzen?"}
+                options={this.selectOptions1}
+                handleChange={this.handleChange}
+              ></Question>
+              <Question
+                type={1}
+                title={"Genaue Übersicht über einzelne Produkte"}
+                desc={
+                  "Mit dieser Option könnt Ihr eine genaue Übersicht über die einzelnen Produkte, die ihr anbietet präsentieren. Ihr könnt hier eure gesamte Produktpalette online aufzeigen, inklusive Produktinfos, Foto und ggfs. Preis und Kaufoption. Dies ermöglicht dem Kunden, sich genau zu informieren ob Ihr das passende Produkt für ihn habt."
+                }
+                question={"Würdet ihr dies gerne nutzen?"}
+                options={this.selectOptions1}
+                handleChange={this.handleChange}
+              ></Question>
+              <Question
+                type={1}
+                title={"Verknüpfung mit bestehendem Online-Shop"}
+                desc={
+                  "Falls Ihr bereits einen Online-Shop habt, kann dieser einfach mit unserer Plattform verknüpft werden."
+                }
+                question={"Würdet ihr dies gerne nutzen?"}
+                options={this.selectOptions1}
+                handleChange={this.handleChange}
+              ></Question>
 
               <hr />
             </div>
+            {/* PART 2 */}
+            <div>
+              <h2>Kaufberatung/Konakt</h2>
+              <Question
+                type={2}
+                title={"Verknüpfung mit bestehendem Online-Shop"}
+                desc={
+                  "Hiemit soll die Möglichkeit eröffnet werden, dass Händler und Kunde direkt und unkompliziert in Kontakt treten können. Damit soll ein privateres Kaufumfeld als bei großen Onlinehändlern ermöglicht werden, dass die Vorteile des persönlichen Kontakt direkt im Geschäft auch online gewährleisten soll. Die Kunden sollen die Möglichkeit haben, z.B. Fragen zu bestimmten Produkten zu stellen und bei ihrem Kauf beraten zu werden. "
+                }
+                question={"Würdet ihr dies gerne nutzen?"}
+                options={this.selectOptions2}
+                handleChange={this.handleChange}
+              ></Question>
+              <p></p>
+              <hr />
+            </div>
+            {/* FINAL PART */}
             <h4>Contact details</h4>
             <Form.Row>
               <Form.Group as={Col} md="6" controlId="formBasicFirstName">
@@ -194,3 +246,43 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(null, mapDispatchToProps)(Questionnaire);
+
+function Question(props) {
+  const { type, title, desc, question, options, handleChange } = props;
+
+  let questionElement = {};
+  if (type === 1) {
+    questionElement = (
+      <Form.Group as={Col} md="6" controlId="validationCustom03">
+        <Form.Control as="select" required name="shopName" onChange={handleChange}>
+          {Object.values(options).map((opt, key) => (
+            <option key={key}>{opt}</option>
+          ))}
+        </Form.Control>
+      </Form.Group>
+    );
+  } else if (type === 2) {
+    questionElement = (
+      <Form.Group as={Col} md="6" controlId="validationCustom03">
+        {Object.values(options).map((opt, key) => (
+          <Form.Check type="checkbox" id="uyi" label={opt} />
+        ))}
+      </Form.Group>
+    );
+  }
+
+  return (
+    <div className="question q1 my-4">
+      <h4>{title}</h4>
+      <p>{desc}</p>
+
+      <Form.Row className="my-4">
+        <Form.Group as={Col} md="6" controlId="validationCustom03">
+          <Form.Label className="">{question}</Form.Label>
+        </Form.Group>
+        {questionElement}
+      </Form.Row>
+      <Form.Group controlId="exampleForm.ControlSelect1"></Form.Group>
+    </div>
+  );
+}
