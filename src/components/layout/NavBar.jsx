@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
+import "./../../style/navbar.css";
 
 class MyNavBar extends Component {
   render() {
@@ -13,27 +14,30 @@ class MyNavBar extends Component {
 
     return (
       <header>
-        <Navbar expand="lg" fixed="top">
+        <Navbar collapseOnSelect expand="lg" fixed="top">
+          <Navbar.Brand className="nav-brand text-capitalize text-center" href="#home">
+            LokalZ
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <NavLink to="/#home" className="nav-link">
+              <NavLink className="nav-link" to="/#home" className="nav-link">
                 Home
               </NavLink>
-              <NavLink to="/#about" className="nav-link">
+              <NavLink className="nav-link" to="/#about" className="nav-link">
                 About
               </NavLink>
-              <NavLink to="/#browse" className="nav-link">
+              <NavLink className="nav-link" to="/#browse" className="nav-link">
                 Browse
               </NavLink>
-              <NavLink to="/#contact" className="nav-link">
+              <NavLink className="nav-link" to="/#contact" className="nav-link">
                 Contact
               </NavLink>
             </Nav>
 
-            <Navbar.Text className="nav-logo position-absolute text-capitalize" style={{ left: "50%" }}>
+            {/* <Navbar.Text className="nav-brand position-absolute text-capitalize" style={{ left: "50%" }}>
               LokalZ.
-            </Navbar.Text>
+            </Navbar.Text> */}
             {auth.isLoaded && links}
           </Navbar.Collapse>
         </Navbar>

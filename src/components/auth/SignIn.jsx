@@ -21,42 +21,49 @@ class SignIn extends Component {
 
   render() {
     const { authError, auth } = this.props;
-    if (auth.uid) return <Redirect to="/project/last" />;
+    if (auth.uid) return <Redirect to="/" />;
 
     return (
-      <div className="signIn my-5">
-        <Form onSubmit={this.handleSubmit}>
-          <h5>Log In</h5>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" name="email" onChange={this.handleChange} />
-          </Form.Group>
+      <div className="d-flex justify-content-center align-items-center">
+        <div className="signIn my-5">
+          <Form onSubmit={this.handleSubmit}>
+            <h5>Log In</h5>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Enter email"
+                name="email"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
 
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="Password"
-              name="password"
-              onChange={this.handleChange}
-            />
-          </Form.Group>
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                name="password"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
 
-          {/* <Form.Group controlId="formBasicCheckbox">
+            {/* <Form.Group controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group> */}
 
-          {authError ? <Alert variant={"warning"}>{authError}</Alert> : null}
+            {authError ? <Alert variant={"warning"}>{authError}</Alert> : null}
 
-          <Button variant="primary" type="submit" className="btn btn-lg my-2">
-            Log In
-          </Button>
-        </Form>
-        <Link to="/signup">
-          <Button variant="primary" type="button" className="btn my-2">
-            Go to Sign Up Page
-          </Button>
-        </Link>
+            <Button variant="primary" type="submit" className="btn-lg btn-primary my-2">
+              Log In
+            </Button>
+          </Form>
+          <Link to="/signup">
+            <Button variant="primary" type="button" className="btn-primary my-2">
+              Go to Sign Up Page
+            </Button>
+          </Link>
+        </div>
       </div>
     );
   }

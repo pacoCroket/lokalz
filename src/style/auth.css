@@ -1,0 +1,22 @@
+.signUp {
+  margin: 2rem 0;
+  width: 40%;
+}
+
+.signIn {
+  margin: 2rem 0;
+  width: 40%;
+}
+
+.subscribe {
+  margin: 2rem 0;
+  width: 40%;
+}
+
+@media only screen and (max-width: 700px) {
+  .signUp,
+  .signIn,
+  .subscribe {
+    width: 80%;
+  }
+}
