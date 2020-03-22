@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import firebase, { fbConfig } from "./config/firebaseConfig.js";
+import firebase, { fbConfig } from "./config/fbCOnfig.js";
 import { createStore, applyMiddleware, compose } from "redux";
 import rootReducer from "./store/reducers/rootReducer";
 import { Provider } from "react-redux";

@@ -42,8 +42,8 @@ body {
     align-items: center;
 }
 
-.row {
-}
+/* .row {
+} */
 
 .cath {
     display: flex;
@@ -246,7 +246,20 @@ body {
 .btn-primary {
     background-color: var(--accent-secondary-color) !important;
     color: var(--dark-color) !important;
-    border-color: var(--dark-color) !important;
+    border-color: transparent;
+}
+
+.btn-big {
+    width: 50%;
+    right: 0;
+    /* height: 3rem; */
+    background-color: var(--light-color) !important;
+    font: 400 2rem/3rem var(--primary-font) !important;
+    border-color: transparent !important;
+}
+
+.btn-big:hover {
+    background-color: var(--accent-secondary-color) !important;
 }
 .logo_pos {
     background-image: linear-gradient(#f9ce21, #f9ce21);
