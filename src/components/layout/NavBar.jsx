@@ -13,14 +13,11 @@ class MyNavBar extends Component {
 
     return (
       <header>
-        <Navbar bg="light" expand="lg" fixed="top">
-          {/* <Navbar.Brand href="" target="_blank" rel="noopener noreferrer">
-          LokalZ
-        </Navbar.Brand> */}
+        <Navbar expand="lg" fixed="top">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <NavLink to="/" className="nav-link">
+              <NavLink to="/#home" className="nav-link">
                 Home
               </NavLink>
               <NavLink to="/#about" className="nav-link">
@@ -34,7 +31,7 @@ class MyNavBar extends Component {
               </NavLink>
             </Nav>
 
-            <Navbar.Text className="position-absolute text-capitalize" style={{ left: "50%" }}>
+            <Navbar.Text className="nav-logo position-absolute text-capitalize" style={{ left: "50%" }}>
               LokalZ.
             </Navbar.Text>
             {auth.isLoaded && links}
