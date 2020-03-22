@@ -1,21 +1,19 @@
 :root {
-  --light-color: #ffffff;
-  --dark-color: #000000;
-  --accent-light-color: #fde8e9;
-  --accent-primary-color: #011638;
-  --accent-secondary-color: #fed766;
+  --light-color: #f2eeef;
+  --dark-color: #312c4f;
+  --accent-light-color: #92aab6;
+  --accent-primary-color: #e16a60;
+  --accent-secondary-color: #a88f59;
   --primary-font: "Oswald", sans-serif;
 }
 
 html {
   /* font-family: "Montserrat", sans-serif; */
   scroll-behavior: smooth !important;
-  height: 100%;
 }
 
 body {
   font-family: var(--primary-font);
-  height: 100%;
 }
 
 .App {
@@ -25,7 +23,9 @@ body {
 
 .content {
   padding: 5rem 0;
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .landing {
@@ -33,7 +33,7 @@ body {
 }
 
 .landing > .row {
-  height: 85vh;
+  min-height: 85vh;
   width: 100%;
   margin: 1rem 0;
   margin-bottom: 10%;
@@ -46,6 +46,12 @@ body {
 }
 
 .cath {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.cath img {
   margin-bottom: -3%;
   height: 15vh;
   /* margin-left: 72%; */
@@ -84,16 +90,12 @@ body {
 }
 
 .logo_pos {
-  background-image: linear-gradient(#f9ce21, #f9ce21);
+  background-color: linear-gradient(var(--accent-secondary-color) #ffffff00);
   background-size: 100% 20px;
   background-repeat: no-repeat;
   background-position: center bottom;
   padding: 0;
   z-index: 5;
-}
-
-.yellow {
-  color: #f9ce21;
 }
 
 /* .magic_hover {
@@ -167,4 +169,14 @@ body {
   background-color: var(--accent-secondary-color) !important;
   color: var(--dark-color) !important;
   border-color: var(--dark-color) !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .front_header {
+    font: 600 5rem/6rem var(--primary-font);
+  }
+
+  .cath {
+    display: none !important;
+  }
 }

@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
+import Card from "react-bootstrap/Card";
 import { saveQuestionnaire } from "../../store/actions/authActions";
 import "./../../style/auth.css";
 import "./../../style/auth.css";
@@ -41,8 +42,12 @@ class Questionnaire extends Component {
     );
 
     return (
-      <div className="d-flex justify-content-center align-items-center">
+      <div className="d-flex flex-column justify-content-center align-items-center">
         <div className="subscribe" id="#subscribe">
+          <Card>
+            <Card.Body>This is some text within a card body.</Card.Body>
+          </Card>
+
           <Form onSubmit={this.handleSubmit}>
             <h5>Fragenbogen</h5>
             <Form.Row>

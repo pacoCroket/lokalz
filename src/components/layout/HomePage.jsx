@@ -17,8 +17,8 @@ class HomePage extends Component {
     return (
       <div className="landing">
         <div className="row section1" id="home">
-          <div className="col-md-3 p-0 mr-5 d-flex flex-column justify-content-end">
-            <Image className="cath ml-auto" src="/assets/images/CologneCathedralSilhouette.svg" rounded />
+          <div className="cath col-md-3 p-0 mr-5">
+            <Image className="ml-auto" src="/assets/images/CologneCathedralSilhouette.svg" rounded />
             <h3 className="sm_title text-right border-left-0 ">{brandString}</h3>
           </div>
           {/* <div className="col-md-1"></div> */}
