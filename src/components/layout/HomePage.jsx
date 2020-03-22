@@ -49,18 +49,28 @@ class HomePage extends Component {
                             ex ea commodo consequat.
                         </p>
                     </div>
-                    {/* <div className="col-md-1"></div> */}
+
                     <div className="col-md-3 col_5 span4 p-0"></div>
                 </div>
                 <div className="row section2" id="about">
-                    <div className="col-md-1"></div>
-                    <div className="col-md-2">
+                    <div className="col-md circle_pos">
                         <Image
                             className="pic"
+                            style={{ backgroundColor: "#43A691" }}
                             src="/assets/images/charity.svg"
                             roundedCircle
                         />
-                        <span className="pic_text">
+                        <span className="text_pos">
+                            <h4 className="pic_title text-center">
+                                Solidarisch
+                                <span
+                                    style={{
+                                        color: "var(--accent-secondary-color)"
+                                    }}
+                                >
+                                    !
+                                </span>
+                            </h4>
                             <p className="pic_text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
@@ -69,14 +79,25 @@ class HomePage extends Component {
                             </p>
                         </span>
                     </div>
-                    <div className="col-md-1"></div>
-                    <div className="col-md-2">
+
+                    <div className="col-md circle_pos">
                         <Image
                             className="pic"
-                            src="/assets/images/shop.svg"
+                            style={{ backgroundColor: "#1C2E7A" }}
+                            src="/assets/images/green.svg"
                             roundedCircle
                         />
-                        <span className="pic_text">
+                        <span className="text_pos text-center">
+                            <h4 className="pic_title">
+                                Umweltbewusst
+                                <span
+                                    style={{
+                                        color: "var(--accent-secondary-color)"
+                                    }}
+                                >
+                                    !
+                                </span>
+                            </h4>
                             <p className="pic_text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
@@ -85,14 +106,25 @@ class HomePage extends Component {
                             </p>
                         </span>
                     </div>
-                    <div className="col-md-1"></div>
-                    <div className="col-md-2">
+
+                    <div className="col-md circle_pos">
                         <Image
                             className="pic"
-                            src="/assets/images/book.svg"
+                            style={{ backgroundColor: "darkred" }}
+                            src="/assets/images/commerce.svg"
                             roundedCircle
                         />
-                        <span className="pic_text">
+                        <span className="text_pos text-center">
+                            <h4 className="pic_title">
+                                Lokal
+                                <span
+                                    style={{
+                                        color: "var(--accent-secondary-color)"
+                                    }}
+                                >
+                                    !
+                                </span>
+                            </h4>
                             <p className="pic_text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
@@ -100,12 +132,6 @@ class HomePage extends Component {
                                 enim ad minim veniam
                             </p>
                         </span>
-                    </div>
-                    <div className="col-md-1"></div>
-                    <div className="col-md-2 p-0">
-                        <h3 className="sm_title text-left border-right-0 ml-5">
-                            {brandString}
-                        </h3>
                     </div>
                 </div>
                 <div className="row section3" id="contact">
