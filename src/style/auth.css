@@ -9,8 +9,28 @@
 }
 
 .subscribe {
-  margin: 2rem 0;
+  padding: 2rem;
   width: 50%;
+}
+
+.subscribe .card {
+  background-color: var(--light-color);
+  border-radius: 1rem;
+}
+
+.subscribe .title {
+  color: var(--light-color);
+}
+
+.subscribe .question {
+  padding: 1rem 0;
+}
+
+.questionGroup {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  background-color: var(--light-color);
 }
 
 @media only screen and (max-width: 700px) {
