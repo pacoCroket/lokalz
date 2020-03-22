@@ -1,0 +1,98 @@
+:root {
+  --mainColor: #f9ce21;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth !important;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.navbar {
+  font-size: 1.5rem;
+  margin-left: 2%;
+}
+
+.landing {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.row {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.title {
+  font-size: 8rem !important;
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+.sm_title {
+  text-align: right;
+  border-bottom: solid;
+  margin-top: 40%;
+}
+.front_text {
+  margin: 5% 0;
+  font-size: 1.3rem;
+}
+/* SIGNUP PAGE */
+.shop_signup {
+  margin-top: 40%;
+}
+.nachbar_form {
+  margin-top: 20%;
+}
+.shop_name {
+  margin-bottom: 1.5rem !important;
+}
+
+.brk-btn {
+  position: relative;
+  background: none;
+  color: aqua;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid aqua;
+  padding: 0.5em 1em;
+}
+.brk-btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  right: 20%;
+  top: -0.21em;
+  transform: skewX(-45deg);
+  -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  left: 20%;
+  bottom: -0.25em;
+  transform: skewX(45deg);
+  -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.fold {
+  display: none;
+  height: 0;
+  width: 100%;
+}
+
+.fold.active {
+  display: inline-block;
+}
