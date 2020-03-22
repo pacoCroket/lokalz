@@ -1,4 +1,13 @@
 :root {
+    --mainColor: #;
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    --accent-light-color: #fde8e9;
+    --accent-primary-color: #011638;
+    --accent-secondary-color: #fed766;
+}
+
+
   --light-color: #ffffff;
   --dark-color: #2a2b2a;
   --accent-light-color: #fde8e9;
@@ -28,7 +37,7 @@ body {
 }
 
 .landing {
-  display: inline-block;
+    display: inline-block;
 }
 
 .landing > .row {
@@ -44,127 +53,114 @@ body {
 .row {
 }
 
+.cath {
+    margin-bottom: -3%;
+    height: 15vh;
+    margin-left: 72%;
+}
+
 .front_header {
   font: 600 6rem/9rem var(--primary-font);
-  /* font-size: 6rem;
-  text-align: left;
-  font-weight: 600; */
 }
 
 .front_text {
-  margin: 5% 0;
-  font-size: 1.3rem;
+    margin: 5% 0;
+    font-size: 1.3rem;
+    font-family: "Arvo", serif;
 }
 /* SIGNUP PAGE */
 .shop_signup {
-  margin-top: 40%;
+    margin-top: 40%;
 }
 .nachbar_form {
-  margin-top: 20%;
+    margin-top: 20%;
 }
 .shop_name {
-  margin-bottom: 1.5rem;
-}
-
-.brk-btn {
-  position: relative;
-  background: none;
-  color: aqua;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 0.2em solid aqua;
-  padding: 0.5em 1em;
-}
-brk-btn::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 10%;
-  background: #222;
-  height: 0.3em;
-  right: 20%;
-  top: -0.21em;
-  transform: skewX(-45deg);
-  -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
-}
-brk-btn::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 10%;
-  background: #222;
-  height: 0.3em;
-  left: 20%;
-  bottom: -0.25em;
-  transform: skewX(45deg);
-  -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
-  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    margin-bottom: 1.5rem;
 }
 
 .fold {
-  display: none;
-  height: 0;
-  width: 100%;
+    display: none;
+    height: 0;
+    width: 100%;
 }
 
 .fold.active {
-  display: inline-block;
+    display: inline-block;
+}
+
+.logo_pos {
+    background-image: linear-gradient(#f9ce21, #f9ce21);
+    background-size: 10px 70%;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    z-index: 5;
 }
 
 .yellow {
-  color: #f9ce21;
+    color: #f9ce21;
 }
 
 .magic_hover {
-  background-size: 100% 200%;
-  text-decoration: none;
-  list-style-type: none;
-  background-image: linear-gradient(to bottom, #fff 50%, #f9ce21 50%);
-  transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
-  color: black;
-  background-color: #f8f9fa;
+    background-size: 100% 200%;
+    text-decoration: none;
+    list-style-type: none;
+    background-image: linear-gradient(to bottom, #fff 50%, #f9ce21 50%);
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    color: black;
+    background-color: #f8f9fa;
 }
 .magic_hover:hover,
 .magic_hover:focus {
-  background-position: 0 100%;
-  color: black;
-  text-decoration: none;
-  list-style-type: none;
+    background-position: 0 100%;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .sm_title {
-  border: 0.1em solid black;
-  margin-top: 20%;
-  padding: 0.5em;
-  background-color: var(--accent-secondary-color);
+    border: 0.1em solid black;
+    margin-bottom: 70%;
+    padding: 0.5em;
+    background-color: var(--dark-color);
+    color: white;
 }
 
 /* SECTION2 */
 
 .section1 {
-  display: flex;
+    display: flex;
 }
 
 .section2 {
-  background-color: white;
+    background-color: white;
 }
 
 .pic {
-  height: 30vh;
-  width: 100%;
-  border: solid;
-  border-radius: 50%;
-  margin-bottom: 20%;
+    height: 350px;
+    width: 350px;
+    border: solid;
 }
 
 .pic_text {
-  margin: 0 -15%;
-  font-size: 2.5rem;
+    font-size: 1.5rem;
+    font-family: "Arvo", serif;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 5%;
+}
+.pic_title {
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+.text_pos {
+    margin: 10%;
 }
 
 .btn-primary {
   background-color: var(--accent-secondary-color) !important;
   color: var(--dark-color) !important;
   border-color: var(--dark-color) !important;
-}
