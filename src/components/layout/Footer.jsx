@@ -4,7 +4,7 @@ import "./../../style/footer.css";
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="footer-area" id="footer-area">
+      <footer className="footer-area mt-auto" id="footer-area">
         <div className="container">
           <div className="site-logo text-center">
             <div className="social text-center py-2">

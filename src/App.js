@@ -8,6 +8,7 @@ import Footer from "./components/layout/Footer";
 import Questionnaire from "./components/layout/Questionnaire";
 import SingIn from "./components/auth/SignIn";
 import SingUp from "./components/auth/SignUp";
+import UserSettings from "./components/layout/UserSettings";
 
 class App extends Component {
   render() {
@@ -15,12 +16,13 @@ class App extends Component {
       <BrowserRouter>
         <div className="App" id="app">
           <NavBar id="NavBar" />
-          <div className="content">
+          <div className="content mb-auto">
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route path="/signup" component={SingUp} />
               <Route path="/signin" component={SingIn} />
               <Route path="/questionnaire" component={Questionnaire} />
+              <Route path="/usersettings" component={UserSettings} />
             </Switch>
           </div>
           <Footer></Footer>

@@ -38,18 +38,37 @@ export const signUp = newUser => {
     firebase
       .auth()
       .createUserWithEmailAndPassword(newUser.email, newUser.password)
-      .then((resp) => {
-        return firestore.collection('users').doc(resp.user.uid).set({
-          firstName: newUser.firstName,
-          lastName: newUser.lastName,
-          initials: newUser.firstName[0] + newUser.lastName[0]
-        })
+      .then(resp => {
+        return firestore
+          .collection("users")
+          .doc(resp.user.uid)
+          .set({
+            firstName: newUser.firstName,
+            lastName: newUser.lastName,
+            initials: newUser.firstName[0] + newUser.lastName[0]
+          });
       })
       .then(() => {
         dispatch({ type: "SIGNUP_SUCCESS" });
       })
       .catch(err => {
         dispatch({ type: "SIGNUP_ERROR", err });
+      });
+  };
+};
+
+export const saveQuestionnaire = questionnaire => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
+    // make async call to DB
+    const firestore = getFirestore();
+    firestore
+      .collection("questionnaires")
+      .add(questionnaire)
+      .then(res => {
+        dispatch({ type: "CREATE_QUESTIONNAIRE", questionnaire });
+      })
+      .catch(err => {
+        dispatch({ type: "CREATE_QUESTIONNAIRE_ERROR", err });
       });
   };
 };

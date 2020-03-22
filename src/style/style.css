@@ -16,12 +16,13 @@ body {
 }
 
 .App {
-  min-height: 100vh;
   background-color: #f8f9fa;
+  min-height: 100vh;
 }
 
 .content {
   padding: 5rem 0;
+  min-height: 60vh;
 }
 
 .landing {
@@ -108,13 +109,7 @@ brk-btn::after {
 .fold.active {
   display: inline-block;
 }
-/* .logo_pos {
-    background-image: linear-gradient(#f9ce21, #f9ce21);
-    background-size: 10px 70%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 5;
-} */
+
 .yellow {
   color: #f9ce21;
 }
@@ -164,4 +159,10 @@ brk-btn::after {
 .pic_text {
   margin: 0 -15%;
   font-size: 2.5rem;
+}
+
+.btn-primary {
+  background-color: var(--accent-secondary-color) !important;
+  color: var(--dark-color) !important;
+  border-color: var(--dark-color) !important;
 }

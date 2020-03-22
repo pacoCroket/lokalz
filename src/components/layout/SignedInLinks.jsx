@@ -18,7 +18,7 @@ class SignedInLinks extends Component {
   };
 
   render() {
-    const { profile } = this.props;
+    const { profile, signOut } = this.props;
 
     return (
       <Nav className="ml-auto">
@@ -26,9 +26,9 @@ class SignedInLinks extends Component {
           title={profile.firstName ? profile.firstName + "'s Profile" : "My profile"}
           id="basic-nav-dropdown"
         >
-          <NavDropdown.Item href="/">Settings</NavDropdown.Item>
+          <NavDropdown.Item href="/usersettings">Settings</NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item href="/" onClick={this.props.signOut}>
+          <NavDropdown.Item href="/" onClick={signOut}>
             Sign Out
           </NavDropdown.Item>
         </NavDropdown>

@@ -1,13 +1,15 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
+import { saveQuestionnaire } from "../../store/actions/authActions";
 import "./../../style/auth.css";
 import "./../../style/auth.css";
 
-export default class Questionnaire extends Component {
-  state = { showConfimation: false };
+class Questionnaire extends Component {
+  state = { showConfimation: false, firstName: "", lastName: "", email: "", city: "", region: "", plz: "" };
 
   handleClose = () => this.setState({ showConfimation: false });
   handleShow = () => this.setState({ showConfimation: true });
@@ -18,15 +20,8 @@ export default class Questionnaire extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    this.props.saveQuestionnaire(this.state);
     this.handleShow();
-    // if (this.state.password !== this.state.rePassword) {
-    //   this.setState({ error: true });
-    //   return;
-    // } else {
-    //   this.setState({ error: false });
-    //   this.props.signUp(this.state);
-    // }
-    console.log(e);
   };
 
   render() {
@@ -36,13 +31,10 @@ export default class Questionnaire extends Component {
         <Modal.Header closeButton>
           <Modal.Title>Ehrlichen dank fuer Ihren Support</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>-- some text saying thanks and next steps --</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={this.handleClose}>
+          <Button clasName="btn-primary" onClick={this.handleClose}>
             Close
-          </Button>
-          <Button variant="primary" onClick={this.handleClose}>
-            Save Changes
           </Button>
         </Modal.Footer>
       </Modal>
@@ -60,6 +52,7 @@ export default class Questionnaire extends Component {
                   type="text"
                   placeholder="Enter first name"
                   name="firstName"
+                  required
                   onChange={this.handleChange}
                 />
               </Form.Group>
@@ -70,6 +63,7 @@ export default class Questionnaire extends Component {
                   type="text"
                   placeholder="Enter last name"
                   name="lastName"
+                  required
                   onChange={this.handleChange}
                 />
               </Form.Group>
@@ -80,6 +74,7 @@ export default class Questionnaire extends Component {
               <Form.Control
                 type="email"
                 placeholder="Enter email"
+                required
                 name="email"
                 onChange={this.handleChange}
               />
@@ -88,21 +83,39 @@ export default class Questionnaire extends Component {
             <Form.Row>
               <Form.Group as={Col} md="6" controlId="validationCustom03">
                 <Form.Label>City</Form.Label>
-                <Form.Control type="text" placeholder="City" required />
+                <Form.Control
+                  type="text"
+                  placeholder="City"
+                  name="city"
+                  required
+                  onChange={this.handleChange}
+                />
                 <Form.Control.Feedback type="invalid">Please provide a valid city.</Form.Control.Feedback>
               </Form.Group>
               <Form.Group as={Col} md="3" controlId="validationCustom04">
-                <Form.Label>State</Form.Label>
-                <Form.Control type="text" placeholder="State" required />
+                <Form.Label>Region</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Region"
+                  name="region"
+                  required
+                  onChange={this.handleChange}
+                />
                 <Form.Control.Feedback type="invalid">Please provide a valid state.</Form.Control.Feedback>
               </Form.Group>
               <Form.Group as={Col} md="3" controlId="validationCustom05">
-                <Form.Label>Zip</Form.Label>
-                <Form.Control type="text" placeholder="Zip" required />
+                <Form.Label>PLZ</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="PLZ"
+                  name="plz"
+                  required
+                  onChange={this.handleChange}
+                />
                 <Form.Control.Feedback type="invalid">Please provide a valid zip.</Form.Control.Feedback>
               </Form.Group>
             </Form.Row>
-            <Button variant="primary" type="submit" className="ml-auto">
+            <Button variant="primary" type="submit" className="btn-primary">
               Anmelden
             </Button>
           </Form>
@@ -112,3 +125,11 @@ export default class Questionnaire extends Component {
     );
   }
 }
+
+const mapDispatchToProps = dispatch => {
+  return {
+    saveQuestionnaire: questionnaire => dispatch(saveQuestionnaire(questionnaire))
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Questionnaire);
