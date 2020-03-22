@@ -1,28 +1,28 @@
 .navbar {
-  font: 600 1.5rem/2.5rem var(--primary-font);
-  padding: 0.5rem 8% !important;
-  border-bottom: solid;
-  background-color: var(--accent-light-color);
+    font: 600 1.5rem/2.5rem var(--primary-font);
+    padding: 0.5rem 8% !important;
+    border-bottom: solid;
+    background-color: var(--light-color);
 }
 
 .nav-link {
-  margin: 0 1rem;
+    margin: 0 1rem;
 }
 
 .nav-brand {
-  font: 600 2.5rem/3rem var(--primary-font) !important;
-  position: absolute;
-  left: 50%;
+    font: 600 2.5rem/3rem var(--primary-font) !important;
+    position: absolute;
+    left: 50%;
 }
 
 .nav-link:hover,
 .nav-brand:hover {
-  color: var(--accent-secondary-color) !important;
+    color: var(--accent-secondary-color) !important;
 }
 
 @media only screen and (max-width: 1400px) {
-  .nav-brand {
-    position: relative;
-    left: 0;
-  }
+    .nav-brand {
+        position: relative;
+        left: 0;
+    }
 }
