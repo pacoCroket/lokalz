@@ -5,10 +5,10 @@ function signOut() {
     .auth()
     .signOut()
     .then(() => {
-      dispatch({ type: "SIGNOUT_SUCCESS" });
+      console.log("New user signed out");
     })
     .catch(err => {
-      dispatch({ type: "SIGNOUT_ERROR", err });
+      console.log(err);
     });
 }
 

@@ -1,23 +1,55 @@
 {
-    "name": "lokalz",
-    "version": "1.0.0",
-    "description": "Support local businesses with easy and safe neighbour interaction",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/pacoCroket/lokalz.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/pacoCroket/lokalz/issues"
-    },
-    "homepage": "https://github.com/pacoCroket/lokalz#readme",
-    "dependencies": {
-        "firebase": "^7.12.0"
-    }
+  "name": "lokalz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Support local businesses with easy and safe neighbour interaction",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacoCroket/lokalz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacoCroket/lokalz/issues"
+  },
+  "homepage": "https://github.com/pacoCroket/lokalz#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "firebase": "^7.9.3",
+    "moment": "^2.24.0",
+    "react": "^16.13.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.13.0",
+    "react-fontawesome": "^1.7.1",
+    "react-motion": "^0.5.2",
+    "react-redux": "^5.1.1",
+    "react-redux-firebase": "^3.0.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5",
+    "redux-firestore": "^0.13.0",
+    "redux-thunk": "^2.3.0",
+    "underscore": "^1.9.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
