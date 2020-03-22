@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import Image from "react-bootstrap/Image";
+import { Row } from "react-bootstrap";
+
 class HomePage extends Component {
   render() {
     const { notifications } = this.props;
@@ -46,54 +48,63 @@ class HomePage extends Component {
         <div className="row section2" id="about">
           <div className="col-md-3 circle_pos"></div>
 
-          <div className="col-md-6 circle_pos">
-            {/* IMAGE1 */}
-            <Image
-              className="pic"
-              style={{ backgroundColor: "darkred" }}
-              src="/assets/images/commerce.svg"
-              roundedCircle
-            />
-            <span className="text_pos text-center">
-              <h4 className="pic_title">
-                Lokal
-                <span
-                  style={{
-                    color: "var(--accent-secondary-color)"
-                  }}
-                >
-                  !
-                </span>
-              </h4>
-              <p className="pic_text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
-            </span>
+                    <div className="col-md-3 span4 p-0"></div>
+                </div>
+                <div className="row section2" id="about">
+                    <div className="col-md-3 circle_pos"></div>
 
-            {/* IMAGE2 */}
-            <Image
-              className="pic"
-              style={{ backgroundColor: "#43A691" }}
-              src="/assets/images/charity.svg"
-              roundedCircle
-            />
-            <span className="text_pos">
-              <h4 className="pic_title text-center">
-                Solidarisch
-                <span
-                  style={{
-                    color: "var(--accent-secondary-color)"
-                  }}
-                >
-                  !
-                </span>
-              </h4>
-              <p className="pic_text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
-            </span>
+                    <div className="col-md-6 circle_pos">
+                        {/* IMAGE1 */}
+                        <div className="d-flex justify-content-end">
+                            <Image
+                                className="pic"
+                                style={{ backgroundColor: "darkred" }}
+                                src="/assets/images/commerce.svg"
+                                roundedCircle
+                            />
+                            <span className="text_pos text-center">
+                                <h4 className="pic_title">
+                                    Lokal
+                                    <span
+                                        style={{
+                                            color:
+                                                "var(--accent-secondary-color)"
+                                        }}
+                                    ></span>
+                                </h4>
+                                <p className="pic_text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam
+                                </p>
+                            </span>
+                        </div>
+                        {/* IMAGE2 */}
+                        <Image
+                            className="pic"
+                            style={{ backgroundColor: "#43A691" }}
+                            src="/assets/images/charity.svg"
+                            roundedCircle
+                        />
+                        <span className="text_pos">
+                            <h4 className="pic_title text-center">
+                                Solidarisch
+                                <span
+                                    style={{
+                                        color: "var(--accent-secondary-color)"
+                                    }}
+                                >
+                                    !
+                                </span>
+                            </h4>
+                            <p className="pic_text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam
+                            </p>
+                        </span>
 
             {/* IMAGE3 */}
             <Image
