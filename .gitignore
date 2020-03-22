@@ -27,3 +27,4 @@ yarn-error.log*
 .vscode/arduino.json
 node_modules
 src/config/firebaseConfig.js
+src/config/firebaseConfig.js
