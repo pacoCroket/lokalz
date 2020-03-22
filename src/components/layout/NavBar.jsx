@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
+import "./../../style/navbar.css";
 
 class MyNavBar extends Component {
   render() {

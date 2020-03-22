@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { signUp } from "../../store/actions/authActions";
 import { Alert } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
+import "./../../style/auth.css";
 
 class SingUp extends Component {
   state = { email: "", password: "", rePassword: "", firstName: "", lastName: "", error: false };
@@ -30,58 +31,65 @@ class SingUp extends Component {
     if (auth.uid) return <Redirect to="/newproject" />;
 
     return (
-      <div className="signUp my-5">
-        <Form onSubmit={this.handleSubmit}>
-          <h5>Sing Up</h5>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" name="email" onChange={this.handleChange} />
-            <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
-          </Form.Group>
-          <Form.Group controlId="formBasicFirstName">
-            <Form.Label>First Name</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter first name"
-              name="firstName"
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Form.Group controlId="formBasicLastName">
-            <Form.Label>Last Name</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter last name"
-              name="lastName"
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="Password"
-              name="password"
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Form.Group controlId="formBasicRePassword">
-            <Form.Label>Repeat Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="Repeat password"
-              name="rePassword"
-              onChange={this.handleChange}
-            />
-          </Form.Group>
+      <div className="d-flex justify-content-center align-items-center">
+        <div className="signUp ">
+          <Form onSubmit={this.handleSubmit}>
+            <h5>Sing Up</h5>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Enter email"
+                name="email"
+                onChange={this.handleChange}
+              />
+              <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
+            </Form.Group>
+            <Form.Group controlId="formBasicFirstName">
+              <Form.Label>First Name</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter first name"
+                name="firstName"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="formBasicLastName">
+              <Form.Label>Last Name</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter last name"
+                name="lastName"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                name="password"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="formBasicRePassword">
+              <Form.Label>Repeat Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Repeat password"
+                name="rePassword"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
 
-          <Button variant="primary" type="submit">
-            Sign Up
-          </Button>
+            <Button variant="primary" type="submit">
+              Sign Up
+            </Button>
 
-          {this.state.error ? <h3>Passwords don't match!</h3> : null}
-          {authError ? <Alert variant={"warning"}>{authError}</Alert> : null}
-        </Form>
+            {this.state.error ? <h3>Passwords don't match!</h3> : null}
+            {authError ? <Alert variant={"warning"}>{authError}</Alert> : null}
+          </Form>
+        </div>
       </div>
     );
   }

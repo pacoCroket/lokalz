@@ -1,22 +1,22 @@
 /* start footer area*/
 
-footer.footer-area {
-  margin-top: 28rem;
+.footer-area {
   padding: 2rem 0;
+  background-color: var(--accent-light-color);
 }
 
-footer.footer-area .social h5 {
-  font: normal 500 23px/30px var(--roboto);
+.footer-area .social h5 {
+  font: normal 500 3rem/5rem var(--primary-font);
 }
 
-footer.footer-area .social a > i {
-  font-size: 30px;
-  padding: 2rem;
+.footer-area .social a > i {
+  font-size: 4rem;
+  padding: 3rem 2rem;
   color: black;
 }
 
-footer.footer-area .social a:hover > i {
-  color: var(--primary-color);
+.footer-area .social a:hover > i {
+  color: var(--accent-secondary-color);
 }
 
 /* end footer area */

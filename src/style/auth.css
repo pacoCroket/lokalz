@@ -1,0 +1,12 @@
+.signUp {
+  /* grid-area: center;
+  align-self: flex-start; */
+  margin: 7rem 0;
+  width: 40%;
+}
+
+.signIn {
+  grid-area: center;
+  align-self: flex-start;
+  width: 40%;
+}

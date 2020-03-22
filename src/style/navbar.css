@@ -1,0 +1,13 @@
+.navbar {
+  font: 600 2rem/2.5rem "Oswald", sans-serif;
+  padding: 0.5rem 10% !important;
+  border-bottom: solid;
+  background-color: var(--accent-light-color);
+}
+
+.nav-link {
+  margin: 0 1rem;
+}
+
+.nav-logo {
+}

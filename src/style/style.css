@@ -1,10 +1,10 @@
 :root {
-  --mainColor: #f9ce21;
   --light-color: #ffffff;
   --dark-color: #2a2b2a;
   --accent-light-color: #fde8e9;
   --accent-primary-color: #ff6978;
   --accent-secondary-color: #fed766;
+  --primary-font: "Oswald", sans-serif;
 }
 html {
   /* font-family: "Montserrat", sans-serif; */
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--primary-font);
 }
 
 .App {
@@ -20,39 +20,25 @@ body {
   background-color: #f8f9fa;
 }
 
-.navbar {
-  font: 600 2rem/2.5rem "Oswald", sans-serif;
-  padding: 0.5rem 10% !important;
-  /* letter-spacing: -1px; */
-  border-bottom: solid;
-  background-color: var(--light-color);
-}
-
-.nav-logo {
-}
-
 .landing {
   display: inline-block;
 }
 
 .landing > .row {
-  margin: 1rem 0;
   height: 85vh;
-}
-
-.nav-link {
-  margin: 0 1rem;
-}
-.row {
   width: 100%;
+  margin: 1rem 0;
   margin-bottom: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.row {
+}
+
 .front_header {
-  font: 600 6rem/9rem "Oswald", sans-serif;
+  font: 600 6rem/9rem var(--primary-font);
   /* font-size: 6rem;
   text-align: left;
   font-weight: 600; */
