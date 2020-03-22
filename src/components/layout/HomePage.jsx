@@ -5,14 +5,15 @@ import { compose } from "redux";
 import Image from "react-bootstrap/Image";
 
 class HomePage extends Component {
-  render() {
-    const { notifications } = this.props;
+    render() {
+        const { notifications } = this.props;
 
-    const brandString = (
-      <>
-        <b>Lokal</b>Zone.
-      </>
-    );
+        const brandString = (
+            <>
+                <b>Lokal</b>Zone.
+            </>
+        );
+
 
     return (
       <div className="landing">
@@ -42,115 +43,128 @@ class HomePage extends Component {
             </p>
           </div>
 
-          <div className="col-md-3 col_5 span4 p-0"></div>
-        </div>
-        <div className="row section2" id="about">
-          <div className="col-md circle_pos">
-            <Image
-              className="pic"
-              style={{ backgroundColor: "#43A691" }}
-              src="/assets/images/charity.svg"
-              roundedCircle
-            />
-            <span className="text_pos">
-              <h4 className="pic_title text-center">
-                Solidarisch
-                <span
-                  style={{
-                    color: "var(--accent-secondary-color)"
-                  }}
-                >
-                  !
-                </span>
-              </h4>
-              <p className="pic_text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
-            </span>
-          </div>
 
-          <div className="col-md circle_pos">
-            <Image
-              className="pic"
-              style={{ backgroundColor: "#1C2E7A" }}
-              src="/assets/images/green.svg"
-              roundedCircle
-            />
-            <span className="text_pos text-center">
-              <h4 className="pic_title">
-                Umweltbewusst
-                <span
-                  style={{
-                    color: "var(--accent-secondary-color)"
-                  }}
-                >
-                  !
-                </span>
-              </h4>
-              <p className="pic_text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
-            </span>
-          </div>
+                    <div className="col-md-3 span4 p-0"></div>
+                </div>
+                <div className="row section2" id="about">
+                    <div className="col-md-3 circle_pos"></div>
 
-          <div className="col-md circle_pos">
-            <Image
-              className="pic"
-              style={{ backgroundColor: "darkred" }}
-              src="/assets/images/commerce.svg"
-              roundedCircle
-            />
-            <span className="text_pos text-center">
-              <h4 className="pic_title">
-                Lokal
-                <span
-                  style={{
-                    color: "var(--accent-secondary-color)"
-                  }}
-                >
-                  !
-                </span>
-              </h4>
-              <p className="pic_text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
-            </span>
-          </div>
-        </div>
-        <div className="row section3" id="contact">
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
+                    <div className="col-md-6 circle_pos">
+                        {/* IMAGE1 */}
+                        <Image
+                            className="pic"
+                            style={{ backgroundColor: "darkred" }}
+                            src="/assets/images/commerce.svg"
+                            roundedCircle
+                        />
+                        <span className="text_pos text-center">
+                            <h4 className="pic_title">
+                                Lokal
+                                <span
+                                    style={{
+                                        color: "var(--accent-secondary-color)"
+                                    }}
+                                >
+                                    !
+                                </span>
+                            </h4>
+                            <p className="pic_text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam
+                            </p>
+                        </span>
 
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
-          <div className="col-md-1"></div>
-          <div className="col-md-2">
-            <h3 className="sm_title text-left border-right-0 p-0 ml-5">{brandString}</h3>
-          </div>
-        </div>
-      </div>
-    );
-  }
+                        {/* IMAGE2 */}
+                        <Image
+                            className="pic"
+                            style={{ backgroundColor: "#43A691" }}
+                            src="/assets/images/charity.svg"
+                            roundedCircle
+                        />
+                        <span className="text_pos">
+                            <h4 className="pic_title text-center">
+                                Solidarisch
+                                <span
+                                    style={{
+                                        color: "var(--accent-secondary-color)"
+                                    }}
+                                >
+                                    !
+                                </span>
+                            </h4>
+                            <p className="pic_text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam
+                            </p>
+                        </span>
+
+                        {/* IMAGE3 */}
+                        <Image
+                            className="pic"
+                            style={{ backgroundColor: "#1C2E7A" }}
+                            src="/assets/images/green.svg"
+                            roundedCircle
+                        />
+                        <span className="text_pos text-center">
+                            <h4 className="pic_title">
+                                Umweltbewusst
+                                <span
+                                    style={{
+                                        color: "var(--accent-secondary-color)"
+                                    }}
+                                >
+                                    !
+                                </span>
+                            </h4>
+                            <p className="pic_text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam
+                            </p>
+                        </span>
+                    </div>
+                    <div className="col-md-3"></div>
+                </div>
+                <div className="row section3" id="contact">
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2">
+                        <h3 className="sm_title text-left border-right-0 p-0 ml-5">
+                            {brandString}
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 const mapStateToProps = (state, ownProps) => {
-  const { notifications } = state.firestore.ordered;
-  return {
-    notifications,
-    auth: state.firebase.auth
-  };
+    const { notifications } = state.firestore.ordered;
+    return {
+        notifications,
+        auth: state.firebase.auth
+    };
 };
 
 const mapDispatchToProps = dispatch => {
-  return {};
+    return {};
 };
 
 export default compose(
-  connect(mapStateToProps, mapDispatchToProps),
-  firestoreConnect([{ collection: "notifications", limit: 5, orderBy: ["time", "desc"] }])
+    connect(mapStateToProps, mapDispatchToProps),
+    firestoreConnect([
+        { collection: "notifications", limit: 5, orderBy: ["time", "desc"] }
+    ])
 )(HomePage);
