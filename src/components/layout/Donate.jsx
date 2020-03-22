@@ -16,8 +16,8 @@ export default class Donate extends Component {
 
     return (
       <div className="d-flex justify-content-center align-items-center" style={{ height: "500px" }}>
-        <h2 className="front_header logo_pos">
-          Work In Progess
+        <h2 className="front_header">
+          <span className="logo_pos">Work</span> In Progess
           <span style={{ color: "var(--accent-secondary-color)" }}>!</span>
         </h2>
         {/* <PaypalButton
