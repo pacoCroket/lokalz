@@ -4,6 +4,7 @@ import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import Image from "react-bootstrap/Image";
 import { Row, Col } from "react-bootstrap";
+import Subscribe from "./Subscribe";
 
 class HomePage extends Component {
   render() {
@@ -18,20 +19,22 @@ class HomePage extends Component {
     const topSection = (
       <Row className="section1 frontBackground" id="home">
         <Col></Col>
-        <Col md={8}>
-          <div className="statement">
-            <h2>
-              {/* <span className="logo_pos"> </span>*/}
-              Lokal. <br />
-              Nachhaltig. <br /> Progressiv.
-            </h2>
-            <div>
-              <p>
-                Wir machen euch im Netz sichtbar. Während und nach der Krise. Ohne jegliche Gebühren!
-                {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
-              </p>
-            </div>
-          </div>
+        <Col md={4} className="statement">
+          <h2>
+            {/* <span className="logo_pos"> </span>*/}
+            Lokal. <br />
+            Nachhaltig. <br /> Progressiv.
+          </h2>
+        </Col>
+
+        <Col md={4} className="statement">
+          <Row>
+            <Subscribe></Subscribe>
+            <p>
+              Wir machen euch im Netz sichtbar. Während und nach der Krise. Ohne jegliche Gebühren!
+              {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
+            </p>
+          </Row>
         </Col>
         <Col></Col>
       </Row>
