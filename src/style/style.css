@@ -4,7 +4,7 @@
   --accent-light-color: #fff1df;
   --accent-primary-color: #16272d;
   --accent-secondary-color: #595452;
-  --primary-font: "Fjalla One", sans-serif;
+  --primary-font: "Oswald", sans-serif;
   --secondary-font: "Lora", sans-serif;
   --primary-font-color: #221817;
   --accent-font-color: #cf3a38;
@@ -54,16 +54,18 @@ body {
 }
 
 .landing h2 {
-  font: 800 6rem/8rem var(--primary-font);
+  font: 700 6rem/8rem var(--primary-font);
   color: var(--dark-color);
-  padding: 3rem 0;
+  padding: 4rem 0;
+  margin-top: -5% ;
+  
 }
 
 .landing .statement p {
-  font: 400 1.5rem/2rem var(--secondary-font);
-  padding: 2rem;
+  font: 600 1.5rem/2rem var(--secondary-font);
+  /* padding: 2rem; */
   /* background-color: #16272daa; */
-  margin: 5% 0;
+  margin-bottom: -40%;
   color: var(--dark-color);
 }
 
@@ -135,8 +137,8 @@ body {
 
 .section1 {
   display: flex;
-  margin-bottom: 4% !important;
-  margin-top: 3% !important;
+  /* margin-bottom: 4% !important; */
+  /* margin-top: -3% !important;  */
 }
 
 .section2 {

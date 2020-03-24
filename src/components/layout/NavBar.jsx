@@ -24,7 +24,7 @@ class MyNavBar extends Component {
               <Nav.Link className="nav-link" href="/#home" className="nav-link">
                 Home
               </Nav.Link>
-              <Nav.Link className="nav-link" href="/#about" className="nav-link">
+              {/* <Nav.Link className="nav-link" href="/#about" className="nav-link">
                 About
               </Nav.Link>
               <Nav.Link className="nav-link" href="/#browse" className="nav-link">
@@ -32,7 +32,7 @@ class MyNavBar extends Component {
               </Nav.Link>
               <Nav.Link className="nav-link" href="/#contact" className="nav-link">
                 Contact
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
 
             {/* <Navbar.Text className="nav-brand position-absolute text-capitalize" style={{ left: "50%" }}>

@@ -1,8 +1,8 @@
 .navbar {
   font: 400 2rem/3rem var(--primary-font);
   padding: 0.5rem 5% !important;
-  letter-spacing: 1px;
-  border-bottom: solid;
+  letter-spacing: 0px;
+  /* border-bottom: solid; */
   background-color: var(--accent-light-color);
 }
 
