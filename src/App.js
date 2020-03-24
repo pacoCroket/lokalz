@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App" id="app">
-          {/* <NavBar id="NavBar" /> */}
+          <NavBar id="NavBar" />
           <div className="content mb-auto">
             <Switch>
               <Route exact path="/" component={HomePage} />
