@@ -37,7 +37,7 @@ body {
 }
 
 .landing {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .landing > .row {
@@ -54,7 +54,7 @@ body {
 }
 
 .landing h2 {
-  font: 600 6rem/8rem var(--primary-font);
+  font: 800 6rem/8rem var(--primary-font);
   color: var(--dark-color);
   padding: 3rem 0;
 }
@@ -62,7 +62,7 @@ body {
 .landing .statement p {
   font: 400 1.5rem/2rem var(--secondary-font);
   padding: 2rem;
-  background-color: #16272daa;
+  /* background-color: #16272daa; */
   margin: 5% 0;
   color: var(--dark-color);
 }
@@ -72,7 +72,7 @@ body {
 }
 
 .frontBackground {
-  background-image: url("/assets/images/leon-shefi-bright1.jpg");
+  background-image: url("/assets/images/leon-shefi-bright2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

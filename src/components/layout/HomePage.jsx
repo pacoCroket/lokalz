@@ -19,7 +19,7 @@ class HomePage extends Component {
       <div className="landing">
         <Row className="section1 frontBackground" id="home">
           <Col></Col>
-          <Col md={8}>
+          <Col md={10}>
             <div className="statement">
               <h2>
                 {/* <span className="logo_pos"> </span>*/}
@@ -29,8 +29,8 @@ class HomePage extends Component {
               <div>
                 <p>
                   Wir machen euch im Netz sichtbar. Während und nach der Krise. Ohne jegliche Gebühren!
-                  <br />
-                  Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln.
+                  
+                  {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
                 </p>
               </div>
             </div>
