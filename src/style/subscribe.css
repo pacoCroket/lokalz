@@ -1,0 +1,29 @@
+.subscribe-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-color);
+  padding-bottom: 5rem;
+}
+
+.subscribe {
+  padding: 0 2rem;
+  /* width: 50%; */
+}
+
+.subscribe .card {
+  background-color: var(--light-color);
+  border-radius: 1rem;
+}
+
+.subscribe .title {
+  color: var(--light-color);
+}
+
+@media only screen and (max-width: 700px) {
+  .subscribe {
+    width: 80%;
+    padding: 0;
+  }
+}
