@@ -1,31 +1,31 @@
 .footer-area {
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
-    padding: 2rem 0;
-    background-color: var(--accent-light-color);
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  background-color: var(--accent-light-color);
 }
 
 .footer-area .social h5 {
-    font: normal 500 3rem/5rem var(--primary-font);
+  font: normal 500 3rem/5rem var(--primary-font);
 }
 
 .footer-area .social a > i {
-    font-size: 4rem;
-    padding: 3rem 2rem;
-    color: black;
+  font-size: 4rem;
+  padding: 3rem 2rem;
+  color: black;
 }
 
 .footer-area .social a:hover > i {
-    color: var(--accent-secondary-color);
+  color: var(--accent-font-color);
 }
 
 @media only screen and (max-width: 800px) {
-    .footer-area .social a > i {
-        font-size: 2rem;
-        padding: 2rem 1rem;
-    }
-    .footer-area .social h5 {
-        font: normal 500 2rem/3rem var(--primary-font);
-    }
+  .footer-area .social a > i {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+  }
+  .footer-area .social h5 {
+    font: normal 500 2rem/3rem var(--primary-font);
+  }
 }

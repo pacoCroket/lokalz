@@ -8,24 +8,6 @@
   width: 30%;
 }
 
-.subscribe {
-  padding: 2rem;
-  width: 50%;
-}
-
-.subscribe .card {
-  background-color: var(--light-color);
-  border-radius: 1rem;
-}
-
-.subscribe .title {
-  color: var(--light-color);
-}
-
-.subscribe .question {
-  padding: 1rem 0;
-}
-
 .questionGroup {
   padding: 2rem;
   margin: 2rem 0;
@@ -35,8 +17,7 @@
 
 @media only screen and (max-width: 700px) {
   .signUp,
-  .signIn,
-  .subscribe {
+  .signIn {
     width: 80%;
   }
 }

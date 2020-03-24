@@ -34,6 +34,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  margin: 4rem 0;
 }
 
 .landing {
@@ -49,8 +50,7 @@ body {
 }
 
 .landing .statement {
-  /* padding: 3rem 2rem; */
-  margin: 6rem 2rem;
+  padding: 1rem;
 }
 
 .landing h2 {
@@ -228,6 +228,6 @@ body {
 
   .landing .statement p {
     padding: 0.5rem;
-    font: 400 2rem/3rem var(--secondary-font);
+    font: 400 1.5rem/2.5rem var(--secondary-font);
   }
 }
