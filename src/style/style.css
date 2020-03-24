@@ -1,96 +1,105 @@
 :root {
-    --light-color: #F5F1DD;
-    --dark-color: #050607;
-    --accent-light-color: #853c1c;
-    --accent-primary-color: #16272d;
-    --accent-secondary-color: #595452;
-    --primary-font: "Oswald", sans-serif;
+  --light-color: #f5f1dd;
+  --dark-color: #050607;
+  --accent-light-color: #fff1df;
+  --accent-primary-color: #16272d;
+  --accent-secondary-color: #595452;
+  --primary-font: "Fjalla One", sans-serif;
+  --secondary-font: "Lora", sans-serif;
+  --primary-font-color: #221817;
+  --accent-font-color: #cf3a38;
+  /* --accent-color: #cf3a38;
+  --light-accent-color:  #e9403e;
+  --dark-accent-color: #a82f2d;
+  --primary-color: #a82f2d; */
 }
 
 html {
-    /* font-family: "Montserrat", sans-serif; */
-    scroll-behavior: smooth !important;
+  /* font-family: "Montserrat", sans-serif; */
+  scroll-behavior: smooth !important;
 }
 
 body {
-    font-family: var(--primary-font);
+  font-family: var(--primary-font);
 }
 
 .App {
-    background-color: var(--dark-color);
-    min-height: 100vh;
+  background-color: var(--dark-color);
+  min-height: 100vh;
 }
 
 .content {
-    /* padding: 5rem 0; */
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  /* padding: 5rem 0; */
+  min-height: 80vh;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .landing {
-    display: inline-block;
+  display: inline-block;
 }
 
 .landing > .row {
-    min-height: 75vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing .statement {
+  /* padding: 3rem 2rem; */
+  margin: 6rem 2rem;
+}
+
+.landing h2 {
+  font: 600 6rem/8rem var(--primary-font);
+  color: var(--light-color);
+  padding: 3rem 0;
+}
+
+.landing .statement p {
+  font: 400 1.5rem/2rem var(--secondary-font);
+  padding: 2rem;
+  background-color: #16272daa;
+  margin: 5% 0;
+  color: var(--light-color);
 }
 
 .row {
-    margin: 0!important;
+  margin: 0 !important;
 }
 
-
-
-.front_header {
-    font: 600 4rem/4.25rem var(--primary-font);
-    color: var(--light-color)
-    
-}
-
-.front_text {
-    margin: 5% 0;
-    font-size: 1rem;
-    font-family: "Arvo", serif;
-    color: var(--light-color);
-    filter: none;
-}
 .frontBackground {
-    background-image: url("/assets/images/LeoFoureoux1Blur1Dark1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-        height: 100vh;  
-        z-index: 5;   
-    
-    
+  background-image: url("/assets/images/LeoFoureoux1Blur1Dark1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: 5;
 }
 
 /* SIGNUP PAGE */
 .shop_signup {
-    margin-top: 40%;
+  margin-top: 40%;
 }
 .nachbar_form {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 .shop_name {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .fold {
-    display: none;
-    height: 0;
-    width: 100%;
+  display: none;
+  height: 0;
+  width: 100%;
 }
 
 .fold.active {
-    display: inline-block;
+  display: inline-block;
 }
-
 
 /* .magic_hover {
   background-size: 100% 200%;
@@ -116,91 +125,102 @@ body {
 } */
 
 .sm_title {
-    border: 0.1em solid black;
-    padding: 0.5em;
-    background-color: black;
-    color: white;
+  border: 0.1em solid black;
+  padding: 0.5em;
+  background-color: black;
+  color: white;
 }
 
 /* SECTIONS */
 
 .section1 {
-    display: flex;
+  display: flex;
 }
 
 .section2 {
-    background-color: var(--light-color);
-    /* padding: 0 4rem; */
+  background-color: var(--light-color);
+  /* padding: 0 4rem; */
 }
 
-
 .pic_text {
-    font-size: 1.5rem;
-    font-family: "Arvo", serif;
-    letter-spacing: -1px;
-    text-align: left;
-    margin-top: 5%;
+  font-size: 1.5rem;
+  font-family: "Arvo", serif;
+  letter-spacing: -1px;
+  text-align: left;
+  margin-top: 5%;
 }
 
 .pic_title {
-    font-family: "Oswald", sans-serif;
-    font-size: 4rem;
-    font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
-
 .text_pos {
-    margin: 5%;
-    z-index: 5;
+  margin: 5%;
+  z-index: 5;
 }
 
 .circle_pos {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
 .diagonal2 {
-    position: absolute;
-    color: #f2eeef;
-    background-color: #f2eeef;
-    background: #f2eeef;
-    color: #f2eeef;
-    /* padding: 10em 5 12px; */
-    margin-bottom: -18%;
-    height: 200px;
-    overflow: hidden;
-    width: 100%;
-    margin-left: -10%;
-    transform: rotate(375deg) scale(1) skew(0deg) translate(0px);
-    /* -webkit-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
+  position: absolute;
+  color: #f2eeef;
+  background-color: #f2eeef;
+  background: #f2eeef;
+  color: #f2eeef;
+  /* padding: 10em 5 12px; */
+  margin-bottom: -18%;
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+  margin-left: -10%;
+  transform: rotate(375deg) scale(1) skew(0deg) translate(0px);
+  /* -webkit-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
   -moz-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
   -o-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
   -ms-transform: rotate(358deg) scale(1) skew(0deg) translate(0px); */
 }
 
 .btn-primary {
-    background-color: var(--accent-secondary-color) !important;
-    color: var(--dark-color) !important;
-    border-color: var(--dark-color) !important;
+  background-color: var(--accent-secondary-color) !important;
+  color: var(--dark-color) !important;
+  border-color: var(--dark-color) !important;
 }
 .logo_pos {
-    background-image: linear-gradient(#f9ce21, #f9ce21);
-    background-size: 100% 15px;
-    background-repeat: no-repeat;
-    background-position: right 0px bottom 18px;
-    z-index: -5;
+  background-image: linear-gradient(#f9ce21, #f9ce21);
+  background-size: 100% 15px;
+  background-repeat: no-repeat;
+  background-position: right 0px bottom 18px;
+  z-index: -5;
 }
 
 @media only screen and (max-width: 1024px) {
-    .front_header {
-        font: 600 5rem/6rem var(--primary-font);
-    }
+  .front_header {
+    font: 600 5rem/6rem var(--primary-font);
+  }
 
-    .cath {
-        display: none !important;
-    }
+  .cath {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .landing .statement {
+    padding: 1rem;
+  }
+
+  .landing h2 {
+    font: 600 4rem/6rem var(--primary-font);
+  }
+
+  .landing .statement p {
+    padding: 0.5rem;
+    font: 400 2rem/3rem var(--secondary-font);
+  }
 }
