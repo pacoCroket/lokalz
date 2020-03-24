@@ -6,7 +6,6 @@ import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
 import { saveQuestionnaire } from "../../store/actions/authActions";
-import { ParallaxProvider } from "react-scroll-parallax";
 import "./../../style/auth.css";
 import "./../../style/auth.css";
 
