@@ -15,12 +15,12 @@ class MyNavBar extends Component {
     return (
       <header>
         <Navbar collapseOnSelect expand="lg" fixed="top">
-          <Navbar.Brand className="nav-brand text-capitalize text-center" href="/#home">
+          <Navbar.Brand id="nav-logo" className="nav-brand text-capitalize text-center" href="/#home">
             LokalZ
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
+            {/* <Nav className="mr-auto">
               <Nav.Link className="nav-link" href="/#home" className="nav-link">
                 Home
               </Nav.Link>
@@ -33,7 +33,7 @@ class MyNavBar extends Component {
               <Nav.Link className="nav-link" href="/#contact" className="nav-link">
                 Contact
               </Nav.Link>
-            </Nav>
+            </Nav> */}
 
             {/* {auth.isLoaded && links}
              */}
@@ -48,6 +48,15 @@ class MyNavBar extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
+        {/* <script>
+          {$(window).bind("scroll", function() {
+            if ($(window).scrollTop() > 100) {
+              $("#nav-logo").hide();
+            } else {
+              $("#nav-logo").show();
+            }
+          })}
+        </script> */}
       </header>
     );
   }

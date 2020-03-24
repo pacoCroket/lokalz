@@ -2,8 +2,15 @@
   font: 400 2rem/3rem var(--primary-font);
   padding: 0.5rem 5% !important;
   letter-spacing: 1px;
-  border-bottom: solid;
-  background-color: var(--accent-light-color);
+  /* border-bottom: solid; */
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(rgba(255, 255, 255, 0.596)),
+    to(rgba(80, 80, 80, 0)),
+    color-stop(0.3, #fdabab13)
+  );
 }
 
 .nav-link {
@@ -13,7 +20,7 @@
 
 .nav-brand {
   font: 600 3rem/3rem var(--primary-font) !important;
-  position: absolute;
+  position: sticky;
   left: 50%;
 }
 

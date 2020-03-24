@@ -15,80 +15,80 @@ class HomePage extends Component {
       </>
     );
 
-    return (
-      <div className="landing">
-        <Row className="section1 frontBackground" id="home">
-          <Col></Col>
-          <Col md={10}>
-            <div className="statement">
-              <h2>
-                {/* <span className="logo_pos"> </span>*/}
-                Lokal. <br />
-                Nachhaltig. <br /> Progressiv.
-              </h2>
-              <div>
-                <p>
-                  Wir machen euch im Netz sichtbar. Während und nach der Krise. Ohne jegliche Gebühren!
-                  
-                  {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
-                </p>
-              </div>
-            </div>
-          </Col>
-          <Col></Col>
-        </Row>
-        <div className="diagonal"></div>
-        {/* <div className="diagonal2"></div> */}
-        <Row className="section2" id="about">
-          <div className="col-md-3 pl-0"></div>
-          <div className="col-md-6 circle_pos">
-            {/* IMAGE1 */}
-            <div className="d-flex justify-content-end align-items-center img_wrap">
-              <span className="text_pos">
-                <h4 className="pic_title text-center">Lokal</h4>
-                <p className="pic_text text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-              </span>
-            </div>
-            {/* IMAGE2 */}
-            <div className="d-flex justify-content-end align-items-center flex-row-reverse img_wrap">
-              <span className="text_pos text-center">
-                <h4 className="pic_title text-center">Solidarisch</h4>
-                <p className="pic_text text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-              </span>
-            </div>
-
-            {/* IMAGE3 */}
-            <div className="d-flex justify-content-end align-items-center">
-              <span className="text_pos">
-                <h4 className="pic_title text-center">Umweltbewusst</h4>
-                <p className="pic_text text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-              </span>
+    const topSection = (
+      <Row className="section1 frontBackground" id="home">
+        <Col></Col>
+        <Col md={8}>
+          <div className="statement">
+            <h2>
+              {/* <span className="logo_pos"> </span>*/}
+              Lokal. <br />
+              Nachhaltig. <br /> Progressiv.
+            </h2>
+            <div>
+              <p>
+                Wir machen euch im Netz sichtbar. Während und nach der Krise. Ohne jegliche Gebühren!
+                {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
+              </p>
             </div>
           </div>
-          <div className="col-md-3"></div>
-        </Row>
+        </Col>
+        <Col></Col>
+      </Row>
+    );
 
-        <div className="diagonal3"></div>
-        <div className="row section3" id="contact">
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
+    //   const restSections = (<Row className="section2" id="about">
+    //   <div className="col-md-3 pl-0"></div>
+    //   <div className="col-md-6 circle_pos">
+    //     <div className="d-flex justify-content-end align-items-center img_wrap">
+    //       <span className="text_pos">
+    //         <h4 className="pic_title text-center">Lokal</h4>
+    //         <p className="pic_text text-center">
+    //           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    //           labore et dolore magna aliqua. Ut enim ad minim veniam
+    //         </p>
+    //       </span>
+    //     </div>
+    //     <div className="d-flex justify-content-end align-items-center flex-row-reverse img_wrap">
+    //       <span className="text_pos text-center">
+    //         <h4 className="pic_title text-center">Solidarisch</h4>
+    //         <p className="pic_text text-center">
+    //           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    //           labore et dolore magna aliqua. Ut enim ad minim veniam
+    //         </p>
+    //       </span>
+    //     </div>
 
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
-        </div>
+    //     <div className="d-flex justify-content-end align-items-center">
+    //       <span className="text_pos">
+    //         <h4 className="pic_title text-center">Umweltbewusst</h4>
+    //         <p className="pic_text text-center">
+    //           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    //           labore et dolore magna aliqua. Ut enim ad minim veniam
+    //         </p>
+    //       </span>
+    //     </div>
+    //   </div>
+    //   <div className="col-md-3"></div>
+    // </Row>
+
+    // <div className="diagonal3"></div>
+    // <div className="row section3" id="contact">
+    //   <div className="col-md-1"></div>
+    //   <div className="col-md-2"></div>
+    //   <div className="col-md-1"></div>
+    //   <div className="col-md-2"></div>
+
+    //   <div className="col-md-1"></div>
+    //   <div className="col-md-2"></div>
+    //   <div className="col-md-1"></div>
+    //   <div className="col-md-2"></div>
+    // </div>);
+
+    return (
+      <div className="landing">
+        {topSection}
+        <div className="diagonal"></div>
       </div>
     );
   }

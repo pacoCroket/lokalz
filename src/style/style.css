@@ -34,7 +34,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  margin: 4rem 0;
+  /* padding: 4rem 0; */
 }
 
 .landing {
@@ -46,25 +46,29 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
 
 .landing .statement {
-  padding: 1rem;
+  padding: 4rem 1rem;
 }
 
 .landing h2 {
-  font: 600 6rem/8rem var(--primary-font);
-  color: var(--light-color);
+  /* font: 600 6rem/8rem var(--primary-font); */
+  font: 600 6vw var(--primary-font);
+  color: #3a2002;
   padding: 2rem 0;
 }
 
 .landing .statement p {
-  font: 400 1.5rem/2rem var(--secondary-font);
-  padding: 2rem;
-  /* background-color: #16272daa; */
-  margin: 5% 0;
+  font: 400 2.2rem/3rem var(--secondary-font);
+  padding: 1.5rem;
+  background-color: #fcfcfc13;
+  margin: 3rem;
+  margin-left: 5rem;
   color: var(--dark-color);
+  border-radius: 1rem;
+  /* box-shadow: 5px 5px rgba(10, 0, 98, 0.164), 10px 10px rgba(0, 98, 90, 0.171); */
 }
 
 .row {
@@ -76,6 +80,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
   height: 100vh;
   z-index: 5;
 }
@@ -135,8 +140,6 @@ body {
 
 .section1 {
   display: flex;
-  margin-bottom: 4% !important;
-  margin-top: 3% !important;
 }
 
 .section2 {
