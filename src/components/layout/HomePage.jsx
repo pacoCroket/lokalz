@@ -30,7 +30,7 @@ class HomePage extends Component {
                           
                         </h2>
                         <p className="front_text">
-                        Die LOKALZ-Initiative ist eine Herzensangelegenheit, welche aus den Herausforderungen angesichts der weltweit wütenden Corona-Krise heraus entstanden ist. Wir haben es uns zum Ziel gemacht, den lokalen Einzelhandel Kölns durch eine gemeinsame Online-Plattform für die Kölner*innen sichtbar zu machen, um so einen Gegenpol zu den marktführenden Online-Versandhäusern schaffen. 
+                        Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. Wir machen euch im Netz sichtbar. Während und nach der Krise. Ohne jegliche Gebühren!
                         </p>
                     </div>
 
