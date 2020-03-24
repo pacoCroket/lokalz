@@ -4,7 +4,7 @@
   --accent-light-color: #fff1df;
   --accent-primary-color: #16272d;
   --accent-secondary-color: #595452;
-  --primary-font: "Fjalla One", sans-serif;
+  --primary-font: "Oswald", sans-serif;
   --secondary-font: "Lora", sans-serif;
   --primary-font-color: #221817;
   --accent-font-color: #cf3a38;
@@ -66,6 +66,13 @@ body {
   background-color: #fcfcfc13;
   margin: 3rem;
   margin-left: 5rem;
+}
+
+.landing .statement p {
+  font: 600 1.5rem/2rem var(--secondary-font);
+  /* padding: 2rem; */
+  /* background-color: #16272daa; */
+  margin-bottom: -40%;
   color: var(--dark-color);
   border-radius: 1rem;
   /* box-shadow: 5px 5px rgba(10, 0, 98, 0.164), 10px 10px rgba(0, 98, 90, 0.171); */
