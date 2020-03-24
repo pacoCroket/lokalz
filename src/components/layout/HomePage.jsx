@@ -7,11 +7,6 @@ import { Row, Col } from "react-bootstrap";
 
 class HomePage extends Component {
   render() {
-    const brandString = (
-      <>
-        <b>Lokal</b>Zone.
-      </>
-    );
     const { notifications } = this.props;
 
     const brandString = (
