@@ -34,7 +34,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  margin: 4rem 0;
+
 }
 
 .landing {
@@ -65,7 +65,7 @@ body {
   font: 600 1.5rem/2rem var(--secondary-font);
   /* padding: 2rem; */
   /* background-color: #16272daa; */
-  margin-bottom: -40%;
+  margin-top: 37%;
   color: var(--dark-color);
 }
 
