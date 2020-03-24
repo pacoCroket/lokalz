@@ -1,9 +1,9 @@
 :root {
-    --light-color: #f2eeef;
-    --dark-color: #222831;
-    --accent-light-color: #393e46;
-    --accent-primary-color: #e16a60;
-    --accent-secondary-color: #f9ce21;
+    --light-color: #F5F1DD;
+    --dark-color: #050607;
+    --accent-light-color: #853c1c;
+    --accent-primary-color: #16272d;
+    --accent-secondary-color: #595452;
     --primary-font: "Oswald", sans-serif;
 }
 
@@ -17,12 +17,12 @@ body {
 }
 
 .App {
-    background-color: #f8f9fa;
+    background-color: var(--dark-color);
     min-height: 100vh;
 }
 
 .content {
-    padding: 5rem 0;
+    /* padding: 5rem 0; */
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -35,49 +35,39 @@ body {
 .landing > .row {
     min-height: 75vh;
     width: 100%;
-    /* margin: 1rem 0; */
-    margin-bottom: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .row {
+    margin: 0!important;
 }
 
-/* .cath {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
 
-.cath img {
-    margin-bottom: -3%;
-    height: 15vh;
-    right: 0;
-} */
-
-.cath2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.cath2 img {
-    margin-bottom: -3%;
-    height: 80vh;
-    right: 0;
-    opacity: 0.4;
-}
 
 .front_header {
-    font: 600 6rem/9rem var(--primary-font);
+    font: 600 4rem/4.25rem var(--primary-font);
+    color: var(--light-color)
+    
 }
 
 .front_text {
     margin: 5% 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: "Arvo", serif;
+    color: var(--light-color);
+    filter: none;
+}
+.frontBackground {
+    background-image: url("/assets/images/LeoFoureoux1Blur1Dark1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        height: 100vh;  
+        z-index: 5;   
+    
+    
 }
 
 /* SIGNUP PAGE */
@@ -118,10 +108,15 @@ body {
   text-decoration: none;
   list-style-type: none;
 } */
+/* .sm_title_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+} */
 
 .sm_title {
     border: 0.1em solid black;
-    margin-bottom: 70%;
     padding: 0.5em;
     background-color: black;
     color: white;
@@ -131,20 +126,13 @@ body {
 
 .section1 {
     display: flex;
-    margin-bottom: 4% !important;
-    margin-top: 3% !important;
 }
 
 .section2 {
     background-color: var(--light-color);
-    padding: 0 4rem;
+    /* padding: 0 4rem; */
 }
 
-.pic {
-    height: 250px;
-    width: 250px;
-    /* border: solid; */
-}
 
 .pic_text {
     font-size: 1.5rem;
@@ -154,18 +142,15 @@ body {
     margin-top: 5%;
 }
 
-.img_wrap {
-    border-bottom: solid;
-}
-
 .pic_title {
     font-family: "Oswald", sans-serif;
     font-size: 4rem;
     font-weight: 700;
 }
 
+
 .text_pos {
-    margin: 10%;
+    margin: 5%;
     z-index: 5;
 }
 
@@ -175,27 +160,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.singleWrap {
-    margin: 0;
-}
 
-.diagonal {
-    position: relative;
-    color: #f2eeef;
-    background-color: #f2eeef;
-    background: #f2eeef;
-    color: #f2eeef;
-    /* padding: 10em 5 12px; */
-    margin-bottom: -16%;
-    height: 250px;
-    width: 120%;
-    overflow: hidden;
-    transform: rotate(345deg) scale(1) skew(0deg) translate(0px);
-    /* -webkit-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
-    -moz-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
-    -o-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
-    -ms-transform: rotate(358deg) scale(1) skew(0deg) translate(0px); */
-}
+
+
 .diagonal2 {
     position: absolute;
     color: #f2eeef;
@@ -214,23 +181,6 @@ body {
   -o-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
   -ms-transform: rotate(358deg) scale(1) skew(0deg) translate(0px); */
 }
-.diagonal3 {
-    position: relative;
-    color: #f2eeef;
-    background-color: #f2eeef;
-    background: #f2eeef;
-    color: #f2eeef;
-    /* padding: 10em 5 12px; */
-    margin-top: -15%;
-    height: 150px;
-    width: 120%;
-    overflow: hidden;
-    transform: rotate(175deg) scale(1) skew(0deg) translate(0px);
-    /* -webkit-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
-  -moz-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
-  -o-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);
-  -ms-transform: rotate(358deg) scale(1) skew(0deg) translate(0px); */
-}
 
 .btn-primary {
     background-color: var(--accent-secondary-color) !important;
@@ -239,9 +189,9 @@ body {
 }
 .logo_pos {
     background-image: linear-gradient(#f9ce21, #f9ce21);
-    background-size: 100% 20px;
+    background-size: 100% 15px;
     background-repeat: no-repeat;
-    background-position: right 0px bottom 15px;
+    background-position: right 0px bottom 18px;
     z-index: -5;
 }
 
