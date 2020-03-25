@@ -42,55 +42,20 @@ class Questionnaire extends Component {
     );
 
     return (
-      <Form onSubmit={this.handleSubmit}>
-        {/* FINAL PART */}
-        <div className="inputEmail">
-          {/* <Form.Row>
-            <Form.Group as={Col} md="6" controlId="formBasicFirstName">
-              <Form.Label>First Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter first name"
-                name="firstName"
-                required
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-
-            <Form.Group as={Col} md="6" controlId="formBasicLastName">
-              <Form.Label>Last Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter last name"
-                name="lastName"
-                required
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-          </Form.Row>
-          <Form.Group controlId="formBasicShopName">
-            <Form.Label>Name deines Geschäfts</Form.Label>
-            <Form.Control
-              type="text"
-              // placeholder="Name deines Betriebs"
-              required
-              name="shopName"
-              onChange={this.handleChange}
-            />
-          </Form.Group> */}
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
+      <Form onSubmit={this.handleSubmit} className="newsletter">
+        <h3 className="mr-auto">Newsletter</h3>
+        <div className="inputEmail p-2">
+          <Form.Group controlId="formBasicEmail" className="text-center d-flex px-2 my-auto">
             <Form.Control
               type="email"
-              placeholder="Enter email"
+              placeholder="deine@email.de"
               required
               name="email"
               onChange={this.handleChange}
             />
-            <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
 
             <Button type="submit" className="btn-big">
-              Anmelden
+              Subscribe
             </Button>
           </Form.Group>
         </div>

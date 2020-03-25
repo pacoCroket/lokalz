@@ -75,67 +75,67 @@ body {
   z-index: 5;
 }
 
+.landing p {
+  font: 400 2rem/2.5rem var(--secondary-font);
+  color: var(--accent-light-color);
+  padding: 1.5rem 0;
+}
+
+.landing b {
+  border-bottom: solid;
+}
+
 /*NEWSLETTER*/
-.landing .newsletter {
+.newsletter {
   box-shadow: 0px 8px 20px 8px rgba(8, 8, 8, 0.267);
   text-align: center;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.8);
-  /* width: 100%; */
+  color: var(--accent-primary-color);
   padding: 1rem;
 }
 
-.landing .newsletter h3 {
+.newsletter h3 {
   font: 700 2.5rem/3rem var(--secondary-font);
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   margin-bottom: 1rem;
-  color: var(--accent-primary-color);
 }
-.landing p {
-  font: 400 1.8rem/2.5rem var(--secondary-font);
-  color: var(--accent-light-color);
-  padding: 1.5rem 0;
-}
-.landing b {
-  border-bottom: solid;
-}
-.landing .newsletter input {
-  /* 	background: rgba(255, 13, 254, 0.90); */
+
+.newsletter input {
+  height: 100%;
   width: 100%;
   display: inline-block;
   text-align: center;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.623);
   padding: 1em;
-  outline: none;
-  border: none;
   color: #222;
   transition: 0.3s linear;
 }
 ::placeholder {
   color: #999;
 }
-.landing .newsletter input:focus {
+
+.newsletter input:focus {
   background: white;
 }
 
-.landing .newsletter button {
+.newsletter button {
+  font: 400 1rem/1rem var(--secondary-font);
   background-image: linear-gradient(to left, var(--dark-color) 0%, var(--accent-primary-color) 100%);
   box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.39);
-  font-family: "Lato", sans-serif;
   margin-left: 1.5rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
   cursor: pointer;
-  color: #ffffff;
-  outline: none;
-  border: none;
+  color: #ffffff !important;
+
   transition: 0.3s linear;
 }
-.landing .newsletter button:hover {
+.newsletter button:hover {
   transform: translatey(2px);
 }
-.landing .newsletter button:active {
+.newsletter button:active {
   transform: translatey(5px);
 }
 /* SIGNUP PAGE */

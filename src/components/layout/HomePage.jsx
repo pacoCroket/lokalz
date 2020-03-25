@@ -16,23 +16,11 @@ class HomePage extends Component {
       </>
     );
 
-    const newsletterElement = (
-      <div className="newsletter">
-        <h3 className="mr-auto">Newsletter</h3>
-
-        <form action="" className="text-center d-flex px-2">
-          <input type="email" placeholder="deine@email.de" required></input>
-          {/* <br /> */}
-          <button>Subscribe</button>
-        </form>
-      </div>
-    );
-
     return (
       <div className="landing">
         <Row className="section1 frontBackground" id="home">
           <Col></Col>
-          <Col md={5} className="px-4">
+          <Col md={5} className="px-5">
             <div className="statement">
               <h2>
                 {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
@@ -42,13 +30,13 @@ class HomePage extends Component {
             </div>
           </Col>
 
-          <Col md={4} className="px-4">
+          <Col md={4} className="px-5">
             <div className="d-flex flex-column">
               <p className="w-100">
                 Wir machen euch sichtbar. <br /> Während und nach der Krise. <br />{" "}
                 <b>kostenfrei & gemeinnützig</b>
               </p>
-              {newsletterElement}
+              <Subscribe></Subscribe>
             </div>
           </Col>
           <Col> </Col>
@@ -84,7 +72,7 @@ class HomePage extends Component {
             </p>
             <Row>
               <Col md={6} className="mx-auto py-5 px-0">
-                {newsletterElement}
+                <Subscribe></Subscribe>
               </Col>
             </Row>
           </Col>
@@ -93,18 +81,6 @@ class HomePage extends Component {
             <img src="/assets/images/strangeSymbol.svg" alt="" className="shapeSize" srcset="" />{" "}
           </Col>
         </Row>
-
-        {/* <div className="row section3" id="contact">
-                    <div className="col-md-1"></div>
-                    <div className="col-md-2"></div>
-                    <div className="col-md-1"></div>
-                    <div className="col-md-2"></div>
-
-                    <div className="col-md-1"></div>
-                    <div className="col-md-2"></div>
-                    <div className="col-md-1"></div>
-                    <div className="col-md-2"></div>
-                </div> */}
       </div>
     );
   }

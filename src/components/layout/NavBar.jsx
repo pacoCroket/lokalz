@@ -20,24 +20,6 @@ class MyNavBar extends Component {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            {/* <Nav className="mr-auto">
-              <Nav.Link className="nav-link" href="/#home" className="nav-link">
-                Home
-              </Nav.Link>
-              {/* <Nav.Link className="nav-link" href="/#about" className="nav-link">
-                About
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="/#browse" className="nav-link">
-                Browse
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="/#contact" className="nav-link">
-                Contact
-              </Nav.Link>
-            </Nav> */}
-
-            {/* {auth.isLoaded && links}
-             */}
-
             <Nav className="ml-auto">
               <NavLink className="nav-link" to="/subscribe">
                 Subscribe
@@ -48,15 +30,6 @@ class MyNavBar extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        {/* <script>
-          {$(window).bind("scroll", function() {
-            if ($(window).scrollTop() > 100) {
-              $("#nav-logo").hide();
-            } else {
-              $("#nav-logo").show();
-            }
-          })}
-        </script> */}
       </header>
     );
   }
