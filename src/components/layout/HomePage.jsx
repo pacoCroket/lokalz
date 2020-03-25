@@ -16,82 +16,83 @@ class HomePage extends Component {
       </>
     );
 
-    const topSection = (
-      <Row className="section1 frontBackground" id="home">
-        <Col></Col>
-        <Col md={4} className="statement">
-          <h2>
-            {/* <span className="logo_pos"> </span>*/}
-            Lokal. <br />
-            Nachhaltig. <br /> Progressiv.
-          </h2>
-        </Col>
-
-        <Col md={4} className="statement">
-          <Row>
-            <Subscribe></Subscribe>
-            <p>
-              Wir machen euch im Netz sichtbar. Während und nach der Krise. Ohne jegliche Gebühren!
-              {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
-            </p>
-          </Row>
-        </Col>
-        <Col></Col>
-      </Row>
-    );
-
-    //   const restSections = (<Row className="section2" id="about">
-    //   <div className="col-md-3 pl-0"></div>
-    //   <div className="col-md-6 circle_pos">
-    //     <div className="d-flex justify-content-end align-items-center img_wrap">
-    //       <span className="text_pos">
-    //         <h4 className="pic_title text-center">Lokal</h4>
-    //         <p className="pic_text text-center">
-    //           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    //           labore et dolore magna aliqua. Ut enim ad minim veniam
-    //         </p>
-    //       </span>
-    //     </div>
-    //     <div className="d-flex justify-content-end align-items-center flex-row-reverse img_wrap">
-    //       <span className="text_pos text-center">
-    //         <h4 className="pic_title text-center">Solidarisch</h4>
-    //         <p className="pic_text text-center">
-    //           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    //           labore et dolore magna aliqua. Ut enim ad minim veniam
-    //         </p>
-    //       </span>
-    //     </div>
-
-    //     <div className="d-flex justify-content-end align-items-center">
-    //       <span className="text_pos">
-    //         <h4 className="pic_title text-center">Umweltbewusst</h4>
-    //         <p className="pic_text text-center">
-    //           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    //           labore et dolore magna aliqua. Ut enim ad minim veniam
-    //         </p>
-    //       </span>
-    //     </div>
-    //   </div>
-    //   <div className="col-md-3"></div>
-    // </Row>
-
-    // <div className="diagonal3"></div>
-    // <div className="row section3" id="contact">
-    //   <div className="col-md-1"></div>
-    //   <div className="col-md-2"></div>
-    //   <div className="col-md-1"></div>
-    //   <div className="col-md-2"></div>
-
-    //   <div className="col-md-1"></div>
-    //   <div className="col-md-2"></div>
-    //   <div className="col-md-1"></div>
-    //   <div className="col-md-2"></div>
-    // </div>);
-
     return (
       <div className="landing">
-        {topSection}
-        <div className="diagonal"></div>
+        <Row className="section1 frontBackground" id="home">
+          <Col></Col>
+          <Col md={5}>
+            <div className="statement">
+              <h2>
+                {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
+                Lokal. <br />
+                Nachhaltig. <br /> Progressiv.
+              </h2>
+            </div>
+          </Col>
+          <Col md={5}>
+            <div className="d-flex flex-column justify-content-center align-items-center p-2">
+              <p className="">
+                Wir machen euch sichtbar. <br /> Während und nach der Krise. <br />{" "}
+                <b>kostenfrei & gemeinnützig</b>
+              </p>
+
+              <div id="container" className="p-0 m-0">
+                <h3>Newsletter</h3>
+
+                <form action="" className="text-center">
+                  <input type="email" placeholder="deine@email.de" required></input>
+                  <br />
+                  <button>Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </Col>
+          <Col> </Col>
+        </Row>
+
+        <Row className="section2" id="about">
+          <Col> </Col>
+          <Col md={10}>
+            <h2 className="p-2">Die Idee</h2>
+            <p className="m-2 p-1">
+              Wir verstehen uns als Plattform die auf der einen Seite Kunden die Möglichkeit bietet ihren
+              Kölner Lieblingsshop auch angesichts der durch das Corona-Virus erschwerten Bedingungen zu
+              unterstützen. Auf der anderen Seite wollen wir lokale Einzelhändler in ganz Köln die Möglichkeit
+              bieten sich online zu präsentieren und direkten Kontakt zu den Menschen in ihrer Umgebung
+              herzustellen.
+            </p>
+            <p className="m-2 p-1">
+              Jeder lokale Einzelhändler benötigt eine Online-Präsenz mit Produktübersicht, Zahlungsabwicklung
+              und Logisitik. Weil wir alle derzeit aufgefordert sind uns so wenig wie moeglich draussen
+              aufzuhalten wird auch das Einkaufen erschwert und der Rueckgriff auf grosse Versandshops
+              attraktiver. Weil dies den lokalen Handel schwaecht, der gerade jetzt moeglichst viel
+              Unterstuetzung braucht wollen wir mit dieser Plattform eine neue Art der Kommunikation zwischen
+              Kunden und lokalem Einzelhandel gewährleistet, sodass nicht jeder Onlinekauf bei den
+              Marktgiganten erfolgen muss.
+            </p>
+            <p className="m-2 p-1">
+              So wollen wir gemeinsam mit unseren Nachbar*innen und den Geschaeften in unserer direkten
+              Umgebung die Corona-Krise meistern und ein Gegengewicht zu den marktführenden
+              Online-Versandhändlern schaffen, deren Produkte im Internet professionell vermarktet, dreimal um
+              die Welt verschickt werden und in Zeiten eines Shutdowns einen enormen Wettbewerbsvorteil
+              gegenüber lokalen Fachgeschäften haben, die derzeit der Gefahr einer drohenden Insolvenz
+              ausgesetzt sind.
+            </p>
+          </Col>
+          <Col> </Col>
+        </Row>
+
+        {/* <div className="row section3" id="contact">
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+                </div> */}
       </div>
     );
   }
