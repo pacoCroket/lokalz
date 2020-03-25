@@ -20,7 +20,7 @@ class HomePage extends Component {
       <div className="newsletter">
         <h3 className="mr-auto">Newsletter</h3>
 
-        <form action="" className="text-center d-flex px-3">
+        <form action="" className="text-center d-flex px-2">
           <input type="email" placeholder="deine@email.de" required></input>
           {/* <br /> */}
           <button>Subscribe</button>
@@ -82,7 +82,11 @@ class HomePage extends Component {
               gegenüber lokalen Fachgeschäften haben, die derzeit der Gefahr einer drohenden Insolvenz
               ausgesetzt sind.
             </p>
-            <div className="mx-auto w-75 p-5">{newsletterElement}</div>
+            <Row>
+              <Col md={6} className="mx-auto py-5 px-0">
+                {newsletterElement}
+              </Col>
+            </Row>
           </Col>
           <Col>
             {" "}

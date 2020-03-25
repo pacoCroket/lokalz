@@ -86,18 +86,15 @@ body {
 }
 
 .landing .newsletter h3 {
-  font-family: "Lato", serif;
-  font-size: 2.4em;
-  font-weight: 700;
-  padding: 1rem;
+  font: 700 2.5rem/3rem var(--secondary-font);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
   color: var(--accent-primary-color);
 }
 .landing p {
-  font-family: "Lato", cursive;
-  /* margin: 2rem 4rem; */
-  font-size: 1.65em;
+  font: 400 1.8rem/2.5rem var(--secondary-font);
   color: var(--accent-light-color);
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 .landing b {
   border-bottom: solid;

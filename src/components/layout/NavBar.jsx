@@ -14,7 +14,7 @@ class MyNavBar extends Component {
 
     return (
       <header>
-        <Navbar collapseOnSelect expand="lg" fixed="top">
+        <Navbar collapseOnSelect expand="lg" sticky="top">
           <Navbar.Brand id="nav-logo" className="nav-brand text-capitalize text-center" href="/#home">
             LokalZ
           </Navbar.Brand>
