@@ -1,6 +1,6 @@
 .navbar {
   font: 400 2rem/3rem var(--primary-font);
-  padding: 0.5rem 5% !important;
+  padding: 0.5rem 2% !important;
   letter-spacing: 1px;
   /* border-bottom: solid; */
   background-image: -webkit-gradient(
@@ -14,7 +14,7 @@
 }
 
 .nav-link {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   color: var(--primary-font) !important;
 }
 
