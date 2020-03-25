@@ -22,21 +22,19 @@ class HomePage extends Component {
           <Col md={4}>
             <div className="statement">
               <h2>
-                {/* <span className="logo_pos"> </span>*/}
+                  {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
+
                 Lokal. <br />
                 Nachhaltig. <br /> Progressiv.
               </h2>
-              <div>
-               
-              </div>
+             
             </div>
           </Col>
        
-          <Col md={6}> <div className="statement">  <p>
+          <Col md={6}>  <div className="statement p-5">  <p>
                   Wir machen euch im Netz sichtbar. Während und nach der Krise. Ohne jegliche Gebühren!
-                  
-                  {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
-                </p></div> </Col>
+                    
+                </p> <div className="shadow  mb-5 rounded"><p>Trage dich in den Newsletter ein und bleib auf dem Laufenden!</p> <input className="form-control form-control-sm" type="text" placeholder="E-Mail Adresse"></input></div> </div> </Col>
               
           <Col> </Col>
         </Row>
