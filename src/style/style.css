@@ -112,7 +112,7 @@ body {
     background-size: cover; */
     /* letter-spacing: 2px; */
     font-size: 2.4em;
-    font-weight: 600;
+    font-weight: 900;
     margin: 0;
     padding: rem 0;
     border-bottom: solid;
@@ -212,11 +212,15 @@ body {
 .section2 h2 {
     color: var(--light-color);
     font: 700 6rem/8rem var(--primary-font);
+    padding: 1.5rem 2.5rem;
+    margin-top: 2%;
 }
 .section2 p {
-    font-size: 1.2rem;
     color: var(--light-color);
-    margin: 0 20rem;
+    margin: 0rem 10rem 5rem 10rem;
+    font: 400 1.3rem/2rem var(--secondary-font);
+    letter-spacing: 0.2px;
+    padding: 3rem;
 }
 
 /* .diagonal2 {

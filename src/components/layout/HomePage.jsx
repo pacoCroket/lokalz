@@ -19,7 +19,7 @@ class HomePage extends Component {
             <div className="landing">
                 <Row className="section1 frontBackground" id="home">
                     <Col></Col>
-                    <Col md={4}>
+                    <Col md={5}>
                         <div className="statement">
                             <h2>
                                 {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
@@ -29,7 +29,7 @@ class HomePage extends Component {
                         </div>
                     </Col>
 
-                    <Col md={4}>
+                    <Col md={6}>
                         <div id="container" className="text-left">
                             <h3>Newsletter</h3>
                             <p className="">
@@ -47,41 +47,48 @@ class HomePage extends Component {
                             </form>
                         </div>
                     </Col>
-
-                    <Col> </Col>
+                    {/* 
+                    <Col> </Col> */}
                 </Row>
-                {/* <div className="diagonal"></div> */}
+
                 <Row className="section2" id="about">
-                    <h2>Die Idee</h2>
-                    <p>
-                        Wir verstehen uns als Plattform die auf der einen Seite
-                        Kunden die Möglichkeit bietet ihren Kölner Lieblingsshop
-                        auch angesichts der durch das Corona-Virus erschwerten
-                        Bedingungen zu unterstützen. Auf der anderen Seite
-                        wollen wir lokale Einzelhändler in ganz Köln die
-                        Möglichkeit bieten sich online zu präsentieren und
-                        direkten Kontakt zu den Menschen in ihrer Umgebung
-                        herzustellen. Jeder lokale Einzelhändler benötigt eine
-                        Online-Präsenz mit Produktübersicht, Zahlungsabwicklung
-                        und Logisitik. Weil wir alle derzeit aufgefordert sind
-                        uns so wenig wie moeglich draussen aufzuhalten wird auch
-                        das Einkaufen erschwert und der Rueckgriff auf grosse
-                        Versandshops attraktiver. Weil dies den lokalen Handel
-                        schwaecht, der gerade jetzt moeglichst viel
-                        Unterstuetzung braucht wollen wir mit dieser Plattform
-                        eine neue Art der Kommunikation zwischen Kunden und
-                        lokalem Einzelhandel gewährleistet, sodass nicht jeder
-                        Onlinekauf bei den Marktgiganten erfolgen muss. So
-                        wollen wir gemeinsam mit unseren Nachbar*innen und den
-                        Geschaeften in unserer direkten Umgebung die
-                        Corona-Krise meistern und ein Gegengewicht zu den
-                        marktführenden Online-Versandhändlern schaffen, deren
-                        Produkte im Internet professionell vermarktet, dreimal
-                        um die Welt verschickt werden und in Zeiten eines
-                        Shutdowns einen enormen Wettbewerbsvorteil gegenüber
-                        lokalen Fachgeschäften haben, die derzeit der Gefahr
-                        einer drohenden Insolvenz ausgesetzt sind.
-                    </p>
+                    <Col> </Col>
+                    <Col md={10}>
+                        <h2 className="">Die Idee</h2>
+                        <p>
+                            Wir verstehen uns als Plattform die auf der einen
+                            Seite Kunden die Möglichkeit bietet ihren Kölner
+                            Lieblingsshop auch angesichts der durch das
+                            Corona-Virus erschwerten Bedingungen zu
+                            unterstützen. Auf der anderen Seite wollen wir
+                            lokale Einzelhändler in ganz Köln die Möglichkeit
+                            bieten sich online zu präsentieren und direkten
+                            Kontakt zu den Menschen in ihrer Umgebung
+                            herzustellen. Jeder lokale Einzelhändler benötigt
+                            eine Online-Präsenz mit Produktübersicht,
+                            Zahlungsabwicklung und Logisitik. Weil wir alle
+                            derzeit aufgefordert sind uns so wenig wie moeglich
+                            draussen aufzuhalten wird auch das Einkaufen
+                            erschwert und der Rueckgriff auf grosse Versandshops
+                            attraktiver. Weil dies den lokalen Handel schwaecht,
+                            der gerade jetzt moeglichst viel Unterstuetzung
+                            braucht wollen wir mit dieser Plattform eine neue
+                            Art der Kommunikation zwischen Kunden und lokalem
+                            Einzelhandel gewährleistet, sodass nicht jeder
+                            Onlinekauf bei den Marktgiganten erfolgen muss. So
+                            wollen wir gemeinsam mit unseren Nachbar*innen und
+                            den Geschaeften in unserer direkten Umgebung die
+                            Corona-Krise meistern und ein Gegengewicht zu den
+                            marktführenden Online-Versandhändlern schaffen,
+                            deren Produkte im Internet professionell vermarktet,
+                            dreimal um die Welt verschickt werden und in Zeiten
+                            eines Shutdowns einen enormen Wettbewerbsvorteil
+                            gegenüber lokalen Fachgeschäften haben, die derzeit
+                            der Gefahr einer drohenden Insolvenz ausgesetzt
+                            sind.
+                        </p>
+                    </Col>
+                    <Col> </Col>
                 </Row>
 
                 {/* <div className="row section3" id="contact">
