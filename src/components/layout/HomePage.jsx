@@ -57,8 +57,8 @@ class HomePage extends Component {
                 </Row>
 
                 <Row className="section2" id="about">
-                    <Col> </Col>
-                    <Col md={10}>
+                
+                    <Col md={8}>
                         <h2 className="">Die Idee</h2>
                         <p>
                             Wir verstehen uns als Plattform die auf der einen
@@ -93,7 +93,7 @@ class HomePage extends Component {
                             sind.
                         </p>
                     </Col>
-                    <Col> </Col>
+                    <Col> <img src="/assets/images/strangeSymbol.svg" alt="" className="shapeSize" srcset=""/> </Col>
                 </Row>
 
                 {/* <div className="row section3" id="contact">

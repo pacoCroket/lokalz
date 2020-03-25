@@ -109,7 +109,7 @@ body {
     /* margin: 2rem 4rem; */
     font-size: 1.65em;
     color: var(--accent-light-color);
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
 }
 .landing b {
   border-bottom: solid;
@@ -159,7 +159,6 @@ body {
 #container button:active {
     transform: translatey(5px);
 }
-
 /* SIGNUP PAGE */
 .shop_signup {
     margin-top: 40%;
@@ -209,9 +208,15 @@ body {
     margin: 0rem 10rem 5rem 10rem;
     font: 400 1.3rem/2rem var(--secondary-font);
     letter-spacing: 0.2px;
-    padding: 3rem;
+    /* padding: 3rem; */
 }
-
+.section2 img {
+  height: 50%;
+  width: 80%;
+  margin-bottom: 100%;
+  padding: 0;
+  margin: 0;
+}
 /* .diagonal2 {
     position: absolute;
     color: #f2eeef;
