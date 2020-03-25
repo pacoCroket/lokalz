@@ -29,13 +29,18 @@ class HomePage extends Component {
                         </div>
                     </Col>
 
-                    <Col md={6}>
-                        <div id="container" className="text-left">
-                            <h3>Newsletter</h3>
-                            <p className="">
-                                Wir machen euch im Netz sichtbar. Während und
-                                nach der Krise. Ohne jegliche Gebühren!
+                    <Col> </Col>
+                    <Col md={5}>
+                      <div className="d-flex flex-column justify-content-center align-items-center">
+                    <p className="">
+                                Wir machen euch sichtbar. <br/> Während und
+                                nach der Krise. <br/> <b>kostenfrei & gemeinnützig</b> 
                             </p>
+                            
+                        <div id="container" className="">
+                       
+                            <h3>Newsletter</h3>
+                            
                             <form action="" className="text-center">
                                 <input
                                     type="email"
@@ -46,9 +51,9 @@ class HomePage extends Component {
                                 <button>Subscribe</button>
                             </form>
                         </div>
+                        </div>
                     </Col>
-                    {/* 
-                    <Col> </Col> */}
+                    <Col> </Col>
                 </Row>
 
                 <Row className="section2" id="about">
