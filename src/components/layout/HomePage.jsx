@@ -6,108 +6,115 @@ import Image from "react-bootstrap/Image";
 import { Row, Col } from "react-bootstrap";
 
 class HomePage extends Component {
-  render() {
-    const { notifications } = this.props;
+    render() {
+        const { notifications } = this.props;
 
-    const brandString = (
-      <>
-        <b>Lokal</b>Zone.
-      </>
-    );
+        const brandString = (
+            <>
+                <b>Lokal</b>Zone.
+            </>
+        );
 
-    return (
-      <div className="landing">
-        <Row className="section1 frontBackground" id="home">
-          <Col></Col>
-          <Col md={4}>
-            <div className="statement">
-              <h2>
-                  {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
+        return (
+            <div className="landing">
+                <Row className="section1 frontBackground" id="home">
+                    <Col></Col>
+                    <Col md={4}>
+                        <div className="statement">
+                            <h2>
+                                {/* Online-Plattform zur Stärkung des lokalen Einzelhandels in Köln. */}
+                                Lokal. <br />
+                                Nachhaltig. <br /> Progressiv.
+                            </h2>
+                        </div>
+                    </Col>
 
-                Lokal. <br />
-                Nachhaltig. <br /> Progressiv.
-              </h2>
-             
+                    <Col md={4}>
+                        <div id="container" className="text-left">
+                            <h3>Newsletter</h3>
+                            <p className="">
+                                Wir machen euch im Netz sichtbar. Während und
+                                nach der Krise. Ohne jegliche Gebühren!
+                            </p>
+                            <form action="" className="text-center">
+                                <input
+                                    type="email"
+                                    placeholder="deine@email.de"
+                                    required
+                                ></input>
+                                <br />
+                                <button>Subscribe</button>
+                            </form>
+                        </div>
+                    </Col>
+
+                    <Col> </Col>
+                </Row>
+                {/* <div className="diagonal"></div> */}
+                <Row className="section2" id="about">
+                    <h2>Die Idee</h2>
+                    <p>
+                        Wir verstehen uns als Plattform die auf der einen Seite
+                        Kunden die Möglichkeit bietet ihren Kölner Lieblingsshop
+                        auch angesichts der durch das Corona-Virus erschwerten
+                        Bedingungen zu unterstützen. Auf der anderen Seite
+                        wollen wir lokale Einzelhändler in ganz Köln die
+                        Möglichkeit bieten sich online zu präsentieren und
+                        direkten Kontakt zu den Menschen in ihrer Umgebung
+                        herzustellen. Jeder lokale Einzelhändler benötigt eine
+                        Online-Präsenz mit Produktübersicht, Zahlungsabwicklung
+                        und Logisitik. Weil wir alle derzeit aufgefordert sind
+                        uns so wenig wie moeglich draussen aufzuhalten wird auch
+                        das Einkaufen erschwert und der Rueckgriff auf grosse
+                        Versandshops attraktiver. Weil dies den lokalen Handel
+                        schwaecht, der gerade jetzt moeglichst viel
+                        Unterstuetzung braucht wollen wir mit dieser Plattform
+                        eine neue Art der Kommunikation zwischen Kunden und
+                        lokalem Einzelhandel gewährleistet, sodass nicht jeder
+                        Onlinekauf bei den Marktgiganten erfolgen muss. So
+                        wollen wir gemeinsam mit unseren Nachbar*innen und den
+                        Geschaeften in unserer direkten Umgebung die
+                        Corona-Krise meistern und ein Gegengewicht zu den
+                        marktführenden Online-Versandhändlern schaffen, deren
+                        Produkte im Internet professionell vermarktet, dreimal
+                        um die Welt verschickt werden und in Zeiten eines
+                        Shutdowns einen enormen Wettbewerbsvorteil gegenüber
+                        lokalen Fachgeschäften haben, die derzeit der Gefahr
+                        einer drohenden Insolvenz ausgesetzt sind.
+                    </p>
+                </Row>
+
+                {/* <div className="row section3" id="contact">
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+                    <div className="col-md-1"></div>
+                    <div className="col-md-2"></div>
+                </div> */}
             </div>
-          </Col>
-       
-          <Col md={6}>  <div className="statement p-5">  <p>
-                  Wir machen euch im Netz sichtbar. Während und nach der Krise. Ohne jegliche Gebühren!
-                    
-                </p> <div className="shadow  mb-5 rounded"><p>Trage dich in den Newsletter ein und bleib auf dem Laufenden!</p> <input className="form-control form-control-sm" type="text" placeholder="E-Mail Adresse"></input></div> </div> </Col>
-              
-          <Col> </Col>
-        </Row>
-        <div className="diagonal"></div>
-        {/* <div className="diagonal2"></div> */}
-        <Row className="section2" id="about">
-          <div className="col-md-3 pl-0"></div>
-          <div className="col-md-6 circle_pos">
-            {/* IMAGE1 */}
-            <div className="d-flex justify-content-end align-items-center img_wrap">
-              <span className="text_pos">
-                <h4 className="pic_title text-center">Lokal</h4>
-                <p className="pic_text text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-              </span>
-            </div>
-            {/* IMAGE2 */}
-            <div className="d-flex justify-content-end align-items-center flex-row-reverse img_wrap">
-              <span className="text_pos text-center">
-                <h4 className="pic_title text-center">Solidarisch</h4>
-                <p className="pic_text text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-              </span>
-            </div>
-
-            {/* IMAGE3 */}
-            <div className="d-flex justify-content-end align-items-center">
-              <span className="text_pos">
-                <h4 className="pic_title text-center">Umweltbewusst</h4>
-                <p className="pic_text text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-              </span>
-            </div>
-          </div>
-          <div className="col-md-3"></div>
-        </Row>
-
-        <div className="diagonal3"></div>
-        <div className="row section3" id="contact">
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
-
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
-          <div className="col-md-1"></div>
-          <div className="col-md-2"></div>
-        </div>
-      </div>
-    );
-  }
+        );
+    }
 }
 
 const mapStateToProps = (state, ownProps) => {
-  const { notifications } = state.firestore.ordered;
-  return {
-    notifications,
-    auth: state.firebase.auth
-  };
+    const { notifications } = state.firestore.ordered;
+    return {
+        notifications,
+        auth: state.firebase.auth
+    };
 };
 
 const mapDispatchToProps = dispatch => {
-  return {};
+    return {};
 };
 
 export default compose(
-  connect(mapStateToProps, mapDispatchToProps),
-  firestoreConnect([{ collection: "notifications", limit: 5, orderBy: ["time", "desc"] }])
+    connect(mapStateToProps, mapDispatchToProps),
+    firestoreConnect([
+        { collection: "notifications", limit: 5, orderBy: ["time", "desc"] }
+    ])
 )(HomePage);
