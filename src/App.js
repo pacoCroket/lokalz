@@ -10,6 +10,7 @@ import SingUp from "./components/auth/SignUp";
 import UserSettings from "./components/layout/UserSettings";
 import Donate from "./components/layout/Donate";
 import Subscribe from "./components/layout/Subscribe";
+import Manifesto from "./components/layout/Manifesto";
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
               <Route path="/subscribe" component={Subscribe} />
               <Route path="/usersettings" component={UserSettings} />
               <Route path="/donate" component={Donate} />
+              <Route path="/manifesto" component={Manifesto} />
             </Switch>
           </div>
           <Footer></Footer>

@@ -21,8 +21,8 @@ class MyNavBar extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <NavLink className="nav-link" to="/subscribe">
-                Subscribe
+              <NavLink className="nav-link" to="/manifesto">
+                Manifesto
               </NavLink>
               <NavLink className="nav-link" to="/donate">
                 Donate

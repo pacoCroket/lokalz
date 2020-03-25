@@ -59,6 +59,7 @@ class Questionnaire extends Component {
             </Button>
           </Form.Group>
         </div>
+        {confirmationModal}
       </Form>
     );
   }
