@@ -155,7 +155,6 @@ body {
 #container button:active {
   transform: translatey(5px);
 }
-
 /* SIGNUP PAGE */
 .shop_signup {
   margin-top: 40%;
@@ -207,7 +206,14 @@ body {
   letter-spacing: 0.2px;
   padding: 3rem;
 }
+.section2 img {
+  height: 50%;
+  width: 80%;
+  margin-bottom: 100%;
+  padding: 0;
+  margin: 0;
 
+}
 /* .diagonal2 {
     position: absolute;
     color: #f2eeef;
