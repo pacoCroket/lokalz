@@ -35,7 +35,7 @@ class HomePage extends Component {
                             <p className="w-100">
                                 Wir machen euch sichtbar. <br /> Während und
                                 nach der Krise. <br />{" "}
-                                <b>kostenfrei & gemeinnützig</b>
+                                <b>Kostenfrei & gemeinnützig</b>
                             </p>
                             <Subscribe></Subscribe>
                         </div>
@@ -45,65 +45,55 @@ class HomePage extends Component {
 
                 <Row className="section2" id="about">
                     <Col></Col>
-                    <Col md={8} className="px-4">
-                        <div className="row d-flex justify-content-between">
-                            <h2>Die Idee</h2>
-                            <img
-                                src="/assets/images/woman_.svg"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
+                    <Col
+                        md={7}
+                        className="px-4 d-flex flex-column justify-content-center align-items-center"
+                    >
+                        <h2>Die Idee</h2>
                         <p>
-                            Wir verstehen uns als Plattform die auf der einen
-                            Seite Kunden die Möglichkeit bietet ihren Kölner
-                            Lieblingsshop auch angesichts der durch das
-                            Corona-Virus erschwerten Bedingungen zu
-                            unterstützen. Auf der anderen Seite wollen wir
-                            lokale Einzelhändler in ganz Köln die Möglichkeit
-                            bieten sich online zu präsentieren und direkten
-                            Kontakt zu den Menschen in ihrer Umgebung
-                            herzustellen.
+                            In einer Zeit, in der auch das Einkaufen erschwert
+                            ist muss damit gerechnet werden, dass immer mehr
+                            Menschen auf die Angebote einschlaegiger
+                            Online-Versandhaendler zurueckgreifen werden, die
+                            schon heute den hert umkaempfen Online-Markt
+                            dominieren. Angesichts dieser Entwicklungen setzt
+                            #brandname darauf dem anonymen Online-Handel eine
+                            neue Art der Kommunikation zwischen Kunden und
+                            lokalen Geschaeften herzustellen, um beiden dadurch
+                            durch die Krise zu helfen.
                         </p>
+
+                        <h5>#shoplocal with GrinKopp</h5>
+
                         <p>
-                            Jeder lokale Einzelhändler benötigt eine
-                            Online-Präsenz mit Produktübersicht,
-                            Zahlungsabwicklung und Logisitik. Weil wir alle
-                            derzeit aufgefordert sind uns so wenig wie moeglich
-                            draussen aufzuhalten wird auch das Einkaufen
-                            erschwert und der Rueckgriff auf grosse Versandshops
-                            attraktiver. Weil dies den lokalen Handel schwaecht,
-                            der gerade jetzt moeglichst viel Unterstuetzung
-                            braucht wollen wir mit dieser Plattform eine neue
-                            Art der Kommunikation zwischen Kunden und lokalem
-                            Einzelhandel gewährleistet, sodass nicht jeder
-                            Onlinekauf bei den Marktgiganten erfolgen muss.
+                            GrinKopp ist eine neuartige Plattform die lokale
+                            Geschäfte unterstützen moechte. Motiviert durch die
+                            neuen Herauforderungen der Corona-Krise, aber mit
+                            dem Ziel auch darueber hinaus einen Einfluss zu
+                            haben um den Online-Handel wieder naeher an das
+                            Leben der Menschen zu bringen und so den derzeit mit
+                            ihm einhergehende Umweltverschmutzung und
+                            Anonymitaet entgegenzuwirken.
                         </p>
-                        <p>
-                            So wollen wir gemeinsam mit unseren Nachbar*innen
-                            und den Geschaeften in unserer direkten Umgebung die
-                            Corona-Krise meistern und ein Gegengewicht zu den
-                            marktführenden Online-Versandhändlern schaffen,
-                            deren Produkte im Internet professionell vermarktet,
-                            dreimal um die Welt verschickt werden und in Zeiten
-                            eines Shutdowns einen enormen Wettbewerbsvorteil
-                            gegenüber lokalen Fachgeschäften haben, die derzeit
-                            der Gefahr einer drohenden Insolvenz ausgesetzt
-                            sind.
-                        </p>
-                        <Row>
+
+                        <h3 className="mx-auto">
+                            Lokal und nachhaltig – hier und jetzt!
+                        </h3>
+
+                        <Row className="container-fluid">
                             <Col md={6} className="mx-auto py-5 px-0">
                                 <Subscribe></Subscribe>
                             </Col>
                         </Row>
                     </Col>
-                    <Col className="d-flex flex-direction-column justify-content-end">
-                        {/* <img
-                            src="/assets/images/motiv1.svg"
+                    <Col>
+                        {" "}
+                        <img
+                            src="/assets/images/strangeSymbol.svg"
                             alt=""
                             className="shapeSize"
                             srcset=""
-                        /> */}
+                        />{" "}
                     </Col>
                 </Row>
             </div>

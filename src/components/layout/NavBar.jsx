@@ -16,7 +16,7 @@ class MyNavBar extends Component {
       <header>
         <Navbar collapseOnSelect expand="lg" sticky="top">
           <Navbar.Brand id="nav-logo" className="nav-brand text-capitalize text-center" href="/#home">
-            LokalZ
+            GrinKopp
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

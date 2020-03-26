@@ -5,12 +5,12 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
-import { saveQuestionnaire } from "../../store/actions/authActions";
+import { saveEmail } from "../../store/actions/authActions";
 import "./../../style/subscribe.css";
 import { Row } from "react-bootstrap";
 
 class Questionnaire extends Component {
-  state = { showConfimation: false, firstName: "", lastName: "", email: "", city: "", region: "", plz: "" };
+  state = { showConfimation: false, email: "" };
 
   handleClose = () => this.setState({ showConfimation: false });
   handleShow = () => this.setState({ showConfimation: true });
@@ -21,7 +21,7 @@ class Questionnaire extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.saveQuestionnaire(this.state);
+    this.props.saveEmail(this.state);
     this.handleShow();
   };
 
@@ -30,11 +30,11 @@ class Questionnaire extends Component {
     const confirmationModal = (
       <Modal show={showConfimation} onHide={this.handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Ehrlichen dank fuer Ihren Support</Modal.Title>
+          <Modal.Title>Vielen Dank</Modal.Title>
         </Modal.Header>
-        <Modal.Body>-- some text saying thanks and next steps --</Modal.Body>
+        <Modal.Body>Sie werden bald von uns hören</Modal.Body>
         <Modal.Footer>
-          <Button className="btn-primary" onClick={this.handleClose}>
+          <Button variant="dark" onClick={this.handleClose}>
             Close
           </Button>
         </Modal.Footer>
@@ -67,7 +67,7 @@ class Questionnaire extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    saveQuestionnaire: questionnaire => dispatch(saveQuestionnaire(questionnaire))
+    saveEmail: email => dispatch(saveEmail(email))
   };
 };
 

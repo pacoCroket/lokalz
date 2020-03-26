@@ -57,15 +57,15 @@ export const signUp = newUser => {
   };
 };
 
-export const saveQuestionnaire = questionnaire => {
+export const saveEmail = email => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
     // make async call to DB
     const firestore = getFirestore();
     firestore
-      .collection("questionnaires")
-      .add(questionnaire)
+      .collection("newsletter")
+      .add(email)
       .then(res => {
-        dispatch({ type: "CREATE_QUESTIONNAIRE", questionnaire });
+        dispatch({ type: "CREATE_QUESTIONNAIRE", email });
       })
       .catch(err => {
         dispatch({ type: "CREATE_QUESTIONNAIRE_ERROR", err });
