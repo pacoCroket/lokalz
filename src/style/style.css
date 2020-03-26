@@ -1,7 +1,7 @@
 :root {
-  --light-color: #f5f1dd;
-  --dark-color: #050607;
-  --accent-light-color: #283655;
+  --light-color: rgb(219, 182, 163);
+  --dark-color: #284058;
+  --accent-light-color: #1f2435;
   --accent-primary-color: hsl(196, 25%, 18%);
   --accent-secondary-color: #595452;
   --primary-font: "Oswald", sans-serif;
@@ -56,9 +56,7 @@ body {
 
 .landing .statement div {
   font: 600 1.5rem/2rem var(--secondary-font);
-
   background-color: var(--opacity-color);
-
   height: 65vh;
 }
 
@@ -77,8 +75,8 @@ body {
 }
 
 .landing p {
-  font: 400 2rem/2.5rem var(--secondary-font);
-  color: var(--accent-light-color);
+  font: 400 2rem/3rem var(--secondary-font);
+  color: var(--accent-primary-color);
   padding: 1.5rem 0;
 }
 
@@ -185,6 +183,7 @@ body {
 }
 .section2 p {
   color: var(--light-color);
+  text-align: justify;
   margin: 0rem 10rem 5rem 10rem;
   font: 400 1.3rem/2rem var(--secondary-font);
   letter-spacing: 0.2px;
