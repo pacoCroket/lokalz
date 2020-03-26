@@ -1,203 +1,218 @@
 :root {
-  --light-color: #f5f1dd;
-  --dark-color: #050607;
-  --accent-light-color: #283655;
-  --accent-primary-color: hsl(196, 25%, 18%);
-  --accent-secondary-color: #595452;
-  --primary-font: "Oswald", sans-serif;
-  --secondary-font: "Lato", sans-serif;
-  --primary-font-color: #221817;
-  --accent-font-color: #cf3a38;
-  --opacity-color: #f8e8e8cc;
+    --light-color: #f5f1dd;
+    --dark-color: #050607;
+    --accent-light-color: #283655;
+    --accent-primary-color: hsl(196, 25%, 18%);
+    --accent-secondary-color: #595452;
+    --primary-font: "Oswald", sans-serif;
+    --secondary-font: "Lato", sans-serif;
+    --primary-font-color: #221817;
+    --accent-font-color: #cf3a38;
+    --opacity-color: #f8e8e8cc;
 }
 
 html {
-  /* font-family: "Montserrat", sans-serif; */
-  scroll-behavior: smooth !important;
-  overflow-x: hidden;
+    /* font-family: "Montserrat", sans-serif; */
+    scroll-behavior: smooth !important;
+    overflow-x: hidden;
 }
 
 body {
-  font-family: var(--primary-font);
+    font-family: var(--primary-font);
 }
 
 .App {
-  background-color: var(--dark-color);
-  min-height: 100vh;
+    background-color: var(--dark-color);
+    min-height: 100vh;
 }
 
 .content {
-  /* padding: 5rem 0; */
-  min-height: 80vh;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+    /* padding: 5rem 0; */
+    min-height: 80vh;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .landing > .row {
-  min-height: 75vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 0;
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
 }
 
 .landing .statement {
-  padding: 2rem 0rem;
+    padding: 2rem 0rem;
 }
 
 .landing .statement h2 {
-  font: 700 7rem/8.5rem var(--primary-font);
-  color: var(--accent-primary-color);
-  padding: 2rem 0;
-  margin-top: -5%;
+    font: 700 7rem/8.5rem var(--primary-font);
+    color: var(--accent-primary-color);
+    padding: 2rem 0;
+    margin-top: -5%;
 }
 
 .landing .statement div {
-  font: 600 1.5rem/2rem var(--secondary-font);
+    font: 600 1.5rem/2rem var(--secondary-font);
 
-  background-color: var(--opacity-color);
+    background-color: var(--opacity-color);
 
-  height: 65vh;
+    height: 65vh;
 }
 
 .row {
-  margin: 0 !important;
+    margin: 0 !important;
 }
 
 .frontBackground {
-  background-image: url("/assets/images/leon-shefi-bright2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  height: 100vh;
-  z-index: 5;
+    background-image: url("/assets/images/leon-shefi-bright2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    z-index: 5;
 }
 
 .landing p {
-  font: 400 2rem/2.5rem var(--secondary-font);
-  color: var(--accent-light-color);
-  padding: 1.5rem 0;
+    font: 400 2rem/2.5rem var(--secondary-font);
+    color: var(--accent-light-color);
+    padding: 1.5rem 0;
 }
 
 .landing b {
-  border-bottom: solid;
+    border-bottom: solid;
 }
 
 /*NEWSLETTER*/
 .newsletter {
-  box-shadow: 0px 8px 20px 8px rgba(8, 8, 8, 0.267);
-  text-align: center;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.8);
-  color: var(--accent-primary-color);
-  padding: 1rem;
+    box-shadow: 0px 8px 20px 8px rgba(8, 8, 8, 0.267);
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--accent-primary-color);
+    padding: 1rem;
 }
 
 .newsletter h3 {
-  font: 700 2.5rem/3rem var(--secondary-font);
-  /* padding: 0.5rem; */
-  margin-bottom: 1rem;
+    font: 700 2.5rem/3rem var(--secondary-font);
+    /* padding: 0.5rem; */
+    margin-bottom: 1rem;
 }
 
 .newsletter input {
-  height: 100%;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.623);
-  padding: 1em;
-  color: #222;
-  transition: 0.3s linear;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.623);
+    padding: 1em;
+    color: #222;
+    transition: 0.3s linear;
 }
 ::placeholder {
-  color: #999;
+    color: #999;
 }
 
 .newsletter input:focus {
-  background: white;
+    background: white;
 }
 
 .newsletter button {
-  font: 400 1rem/1rem var(--secondary-font);
-  background-image: linear-gradient(to left, var(--dark-color) 0%, var(--accent-primary-color) 100%);
-  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.39);
-  margin-left: 1.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  cursor: pointer;
-  color: #ffffff !important;
+    font: 400 1rem/1rem var(--secondary-font);
+    background-image: linear-gradient(
+        to left,
+        var(--dark-color) 0%,
+        var(--accent-primary-color) 100%
+    );
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.39);
+    margin-left: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: #ffffff !important;
 
-  transition: 0.3s linear;
+    transition: 0.3s linear;
 }
 .newsletter button:hover {
-  transform: translatey(2px);
+    transform: translatey(2px);
 }
 .newsletter button:active {
-  transform: translatey(5px);
+    transform: translatey(5px);
 }
 /* SIGNUP PAGE */
 .shop_signup {
-  margin-top: 40%;
+    margin-top: 40%;
 }
 .nachbar_form {
-  margin-top: 20%;
+    margin-top: 20%;
 }
 .shop_name {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .fold {
-  display: none;
-  height: 0;
-  width: 100%;
+    display: none;
+    height: 0;
+    width: 100%;
 }
 
 .fold.active {
-  display: inline-block;
+    display: inline-block;
 }
 .sm_title {
-  border: 0.1em solid black;
-  padding: 0.5em;
-  background-color: black;
-  color: white;
+    border: 0.1em solid black;
+    padding: 0.5em;
+    background-color: black;
+    color: white;
 }
 
 /* SECTIONS */
 
 .section1 {
-  display: flex;
+    display: flex;
 }
 
 .section2 {
-  background-color: var(--accent-light-color);
-  color: white;
+    background-color: var(--accent-light-color);
+    color: white;
 }
 
 .section2 h2 {
-  color: var(--light-color);
-  font: 700 6rem/8rem var(--primary-font);
-  padding: 1.5rem 0;
-  margin-top: 2%;
+    color: var(--light-color);
+    font: 700 6rem/8rem var(--primary-font);
+    padding: 1.5rem 0;
+    margin-top: 2%;
 }
 .section2 p {
-  color: var(--light-color);
-  margin: 0rem 10rem 5rem 10rem;
-  font: 400 1.3rem/2rem var(--secondary-font);
-  letter-spacing: 0.2px;
-  padding: 1rem 0;
-  margin: 0;
+    color: var(--light-color);
+    margin: 0rem 10rem 5rem 10rem;
+    font: 400 1.3rem/2rem var(--secondary-font);
+    letter-spacing: 0.2px;
+    padding: 1rem 0;
+    margin: 0;
 }
 .section2 img {
-  height: 50%;
-  width: 80%;
-  margin-bottom: 100%;
-  padding: 0;
-  margin: 0;
+    height: 70%;
+    width: 20%;
+    margin-bottom: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0.8;
 }
+
+.shapeSize {
+    height: 70%;
+    width: 60% !important;
+    margin-bottom: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0.8 !important;
+}
+
 /* .diagonal2 {
     position: absolute;
     color: #f2eeef;
@@ -217,9 +232,9 @@ body {
 } */
 
 .btn-primary {
-  background-color: var(--accent-secondary-color) !important;
-  color: var(--dark-color) !important;
-  border-color: var(--dark-color) !important;
+    background-color: var(--accent-secondary-color) !important;
+    color: var(--dark-color) !important;
+    border-color: var(--dark-color) !important;
 }
 /* .logo_pos {
     background-image: linear-gradient(#f9ce21, #f9ce21);
@@ -230,22 +245,22 @@ body {
 } */
 
 @media only screen and (max-width: 800px) {
-  .landing .statement {
-    padding: 1rem;
-  }
+    .landing .statement {
+        padding: 1rem;
+    }
 
-  .landing .statement h2 {
-    font: 600 4rem/6rem var(--primary-font);
-  }
+    .landing .statement h2 {
+        font: 600 4rem/6rem var(--primary-font);
+    }
 
-  .landing .statement p {
-    padding: 0.5rem;
-    font: 400 1.5rem/2.5rem var(--secondary-font);
-  }
+    .landing .statement p {
+        padding: 0.5rem;
+        font: 400 1.5rem/2.5rem var(--secondary-font);
+    }
 
-  .frontBackground {
-    background-size: cover;
-    height: 100%;
-    z-index: 5;
-  }
+    .frontBackground {
+        background-size: cover;
+        height: 100%;
+        z-index: 5;
+    }
 }
